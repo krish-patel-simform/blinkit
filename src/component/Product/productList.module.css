@@ -1,0 +1,12 @@
+@reference 'tailwindcss';
+
+.productListContainer{
+    @apply flex flex-col gap-4 ;
+}
+
+.productListHeader{
+    @apply from-neutral-900 text-2xl;
+}
+.productList{
+    @apply flex gap-4 overflow-x-scroll scrollbar-none;
+}

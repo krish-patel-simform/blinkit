@@ -1,0 +1,5 @@
+@reference 'tailwindcss';
+
+.bannerContainer{
+    @apply flex gap-4
+}

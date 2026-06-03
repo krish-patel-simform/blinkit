@@ -1,0 +1,18 @@
+@reference 'tailwindcss';
+
+.category{
+    @apply flex flex-col items-center justify-center cursor-pointer 
+    /* w-[110px]; */
+}
+
+.categoryImg{
+    @apply bg-[var(--bg-category-card)] rounded-[var(--radius)] w-fit;
+
+    & > img{
+        /* @apply h-[110px] w-[110px] */
+    }
+}
+
+.categoryName{
+    @apply text-center;
+}

@@ -1,0 +1,21 @@
+@reference 'tailwindcss';
+
+.product{
+    @apply flex flex-col rounded-[var(--radius)] border-2 border-[var(--border-secondary)] p-4 shadow-md min-w-[12rem] bg-[var(--secondary-color)] justify-between cursor-pointer;
+}
+
+.productInfo{
+    @apply flex flex-col gap-4;
+}
+
+.productInfoBold{
+    @apply font-medium;
+}
+
+.productInfoSecondary{
+    @apply text-neutral-600;
+}
+
+.productActions{
+    @apply flex justify-between;
+}
