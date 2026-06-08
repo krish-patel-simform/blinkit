@@ -3,10 +3,10 @@ import type { Category } from "../types";
 import { CONFIG } from "../Conast/config";
 
 type RawCategory = {
-    image_title : string,
-    image:string,
-    id : string
-}
+  image_title: string;
+  image: string;
+  id: string;
+};
 
 function useProductCategory() {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -17,18 +17,18 @@ function useProductCategory() {
 
       if (!response.ok) throw new Error("Can not get the categories");
 
-      const filterData:Category[] = jsonData.map((category:RawCategory) => {
+      const filterData: Category[] = jsonData.map((category: RawCategory) => {
         return {
           name: category.image_title,
           imageUrl: category.image,
           id: category.id,
         };
       });
-      setCategories(filterData)
+      setCategories(filterData);
     }
 
-    fetchCategories()
-  },[]);
+    fetchCategories();
+  }, []);
 
   return categories;
 }

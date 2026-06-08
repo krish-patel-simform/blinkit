@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { ProductContext } from "../Context/ProductContext";
+import { useGlobalContext } from "./useGlobalContext";
 
-function useProduct()
-{
-    return useContext(ProductContext)
+function useProduct(id:number) {
+  const {selectedProducts} = useGlobalContext()
+
+  return selectedProducts.find((product)=> product.product_id === id)
 }
 
-export {useProduct}
+export { useProduct };

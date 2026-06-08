@@ -1,22 +1,30 @@
-import { ProductContext } from "../../Context/ProductContext";
 import ProductCard from "./ProductCard";
 import type { ProductListProps } from "./productList.type";
 
-import style from './productList.module.css'
+import style from "./productList.module.css";
+import { memo } from "react";
 
-export default function ProductList({ productCategory }: ProductListProps) {
+function ProductList({
+  productCategory,
+  dispatchSelectedProducts,
+}: ProductListProps) {
   return (
     <div className={`${style.productListContainer}`}>
       <h1 className={`${style.productListHeader}`}>{productCategory.title}</h1>
       <div className={`${style.productList}`}>
-        {productCategory.products.map((product,index) => {
+        {productCategory.products.map((product) => {
           return (
-            <ProductContext value={product} key={index}>
-              <ProductCard key={product.name} />
-            </ProductContext>
+            <ProductCard
+              orientation="Vertical"
+              key={product.product_id}
+              product={product}
+              dispatchSelectedProducts={dispatchSelectedProducts}
+            />
           );
         })}
       </div>
     </div>
   );
 }
+
+export default memo(ProductList);

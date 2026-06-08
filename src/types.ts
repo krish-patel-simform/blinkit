@@ -22,7 +22,8 @@ export type Product = {
     unit_type: string,
     brand:string,
     name: string,
-    assets: ProductAssets[]
+    assets: ProductAssets[],
+    product_id : number
 }
 
 export type ProductCategory = {
