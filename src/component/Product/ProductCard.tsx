@@ -2,27 +2,27 @@ import style from "./product.module.css";
 import Button from "../Button/Button";
 import Plus from "reicon-react/icons/Plus";
 import Minus2 from "reicon-react/icons/Minus2";
-// import { useReducer } from "react";
 import type {
   ProductCardProps,
   ProductPresenterProps,
-  // QuantityAction,
 } from "./productCard.type";
-import type { SelectedProduct } from "../../Reducer/selectedProductReducer";
-import { usePurchasedQuantity } from "../../hooks/usePurchasedQuantity";
+import { memo } from "react";
 
 function ProductCardPresenter({
   quantity,
   onIncrease,
   onDecrease,
   product,
-  orientation
+  orientation,
 }: ProductPresenterProps) {
   return (
     <div className={` ${style.product} ${style[`product${orientation}`]}`}>
       <section>
         {/* Img */}
-        <img className={`${style.productImage}`} src={product.assets[0].image_url} />
+        <img
+          className={`${style.productImage}`}
+          src={product.assets[0].image_url}
+        />
       </section>
       <section className={`${style.productInfo}`}>
         <p className={`${style.productInfoBold}`}>{product.name}</p>
@@ -41,65 +41,22 @@ function ProductCardPresenter({
   );
 }
 
-// function quantityReducer(prevState: number, action: QuantityAction) {
-//   switch (action.type) {
-//     case "increase": {
-//       return prevState + 1;
-//     }
-
-//     case "decrease": {
-//       return Math.max(prevState - 1, 0);
-//     }
-//     default:
-//       return prevState;
-//   }
-// }
-
-function ProductCard({ product, dispatchSelectedProducts,orientation ,
-  // initState = 0
+function ProductCard({
+  product,
+  dispatchSelectedProducts,
+  orientation,
+  quantity,
 }: ProductCardProps) {
-  // const [quantity, dispatchQuantity] = useReducer(quantityReducer, initState);
-
-  const quantity = usePurchasedQuantity(product.product_id)
+  console.log("Product card re render");
 
   function handleIncrease() {
-    const newQuantity = quantity + 1;
-
-    // dispatchQuantity({ type: "increase" });
-
-    const newSelectedProduct: SelectedProduct = {
-      ...product,
-      quantity: newQuantity,
-    };
-
-    if (newQuantity === 1) {
-      dispatchSelectedProducts({
-        type: "insert",
-        payload: { newSelectedProduct },
-      });
-    } else {
-      dispatchSelectedProducts({
-        type: "increaseQuantity",
-        payload: {
-          productId: product.product_id,
-          product: newSelectedProduct,
-        },
-      });
-    }
+    dispatchSelectedProducts({
+      type: "increaseQuantity",
+      payload: { product: product },
+    });
   }
   function handleDecrease() {
     const newQuantity = quantity - 1;
-
-    // dispatchQuantity({
-    //   type: "decrease",
-    // });
-
-    if (newQuantity < 0) return;
-
-    const newSelectedProduct: SelectedProduct = {
-      ...product,
-      quantity: newQuantity,
-    };
 
     if (newQuantity === 0) {
       dispatchSelectedProducts({
@@ -108,13 +65,11 @@ function ProductCard({ product, dispatchSelectedProducts,orientation ,
           productId: product.product_id,
         },
       });
-    } else {
+    } else if (newQuantity < 0) return;
+    else {
       dispatchSelectedProducts({
         type: "decreaseQuantity",
-        payload: {
-          productId: product.product_id,
-          product: newSelectedProduct,
-        },
+        payload: { product },
       });
     }
   }
@@ -125,9 +80,9 @@ function ProductCard({ product, dispatchSelectedProducts,orientation ,
       onIncrease={handleIncrease}
       onDecrease={handleDecrease}
       product={product}
-      orientation = {orientation}
+      orientation={orientation}
     />
   );
 }
 
-export default ProductCard;
+export default memo(ProductCard);

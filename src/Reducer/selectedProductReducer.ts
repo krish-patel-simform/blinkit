@@ -7,36 +7,66 @@ export type SelectedProduct = Product & {
 export type SelectedProductReducerState = SelectedProduct[];
 
 export type SelectedProductReducerAction =
-  | { type: "insert"; payload: { newSelectedProduct: SelectedProduct } }
   | { type: "delete"; payload: { productId: number } }
   | {
       type: "increaseQuantity";
-      payload: { productId: number; product: SelectedProduct };
+      payload: { product: Product };
     }
   | {
       type: "decreaseQuantity";
-      payload: { productId: number; product: SelectedProduct };
+      payload: { product: Product };
     };
 
 function selectedProductReducer(
   prevState: SelectedProductReducerState,
   action: SelectedProductReducerAction,
-):SelectedProductReducerState {
+): SelectedProductReducerState {
   switch (action.type) {
-    case "insert": {
-      const { newSelectedProduct } = action.payload;
-      return [...prevState, newSelectedProduct];
-    }
-    case "increaseQuantity":
-    case "decreaseQuantity": {
-      const { productId, product } = action.payload;
+    case "increaseQuantity": {
+      const { product } = action.payload;
+
       const productIndex = prevState.findIndex(
-        (product) => product.product_id === productId,
+        (p) => p.product_id === product.product_id,
       );
 
-      const prefix = prevState.slice(0, productIndex);
-      const sufix = prevState.slice(productIndex + 1);
-      return [...prefix, product, ...sufix];
+      if (productIndex < 0) {
+        // new product
+        const newProduct: SelectedProduct = { ...product, quantity: 1 };
+
+        return [...prevState, newProduct];
+      } else {
+        const newProduct: SelectedProduct = {
+          ...product,
+          quantity: prevState[productIndex].quantity + 1,
+        };
+
+        const prefix = prevState.slice(0, productIndex);
+        const sufix = prevState.slice(productIndex + 1);
+
+        return [...prefix, newProduct, ...sufix];
+      }
+    }
+    case "decreaseQuantity": {
+      const { product } = action.payload;
+
+      const productIndex = prevState.findIndex(
+        (p) => p.product_id === product.product_id,
+      );
+
+      if (productIndex < 0) {
+        // new product
+        return prevState;
+        // return [...prevState, newProduct];
+      } else {
+        const newProduct: SelectedProduct = {
+          ...product,
+          quantity: prevState[productIndex].quantity - 1,
+        };
+        const prefix = prevState.slice(0, productIndex);
+        const sufix = prevState.slice(productIndex + 1);
+
+        return [...prefix, newProduct, ...sufix];
+      }
     }
     case "delete": {
       const { productId } = action.payload;

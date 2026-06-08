@@ -18,14 +18,13 @@ export type QuantityAction =
       // };
     };
 
-type CardOrientation = "Vertical" |"Horizontal"
-
+type CardOrientation = "Vertical" | "Horizontal";
 
 export type ProductCardProps = {
   product: Product;
   dispatchSelectedProducts: React.Dispatch<SelectedProductReducerAction>;
   orientation: CardOrientation;
-  initState? : number;
+  quantity: number;
 };
 
 export type ProductPresenterProps = {
@@ -33,5 +32,5 @@ export type ProductPresenterProps = {
   onIncrease: () => void;
   onDecrease: () => void;
   product: Product;
-  orientation: CardOrientation
+  orientation: CardOrientation;
 };

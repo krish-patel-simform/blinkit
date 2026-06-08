@@ -24,7 +24,7 @@ export default function CartModal({ handleOnClose }: CartModal) {
 
   return (
     <div className={`${style.cartModalContainer}`}>
-      <div  className={`${style.cartModal}`}>
+      <div className={`${style.cartModal}`}>
         <section className={`${style.cartModalHeader}`}>
           <span className={`${style.cartFlex}`}>
             <ArrowLeft4
@@ -45,7 +45,7 @@ export default function CartModal({ handleOnClose }: CartModal) {
                   key={product.product_id}
                   product={product}
                   orientation="Horizontal"
-                  initState={product.quantity}
+                  quantity={product.quantity}
                   dispatchSelectedProducts={dispatchSelectedProducts}
                 />
               );
