@@ -7,7 +7,6 @@ import ProductCard from "../Product/ProductCard";
 import ArrowLeft4 from "reicon-react/icons/ArrowLeft4";
 import CartShopping from "reicon-react/icons/CartShopping";
 import Note from "reicon-react/icons/Note";
-import Dollar2 from "reicon-react/icons/Dollar2";
 import Scooter from "reicon-react/icons/Scooter";
 import ShoppingBag from "reicon-react/icons/ShoppingBag";
 
@@ -58,32 +57,23 @@ export default function CartModal({ handleOnClose }: CartModal) {
               <span>
                 <Note /> Items total
               </span>
-              <span>
-                {totalItemPrice} <Dollar2 />
-              </span>
+              <span>₹ {totalItemPrice}</span>
             </div>
             <div className={`${style.cartBodyBill}`}>
               <span>
                 <Scooter /> Delivery charge
               </span>
-              <span>
-                {DELIVERY_FEE} <Dollar2 />
-              </span>
+              <span>₹ {DELIVERY_FEE}</span>
             </div>
             <div className={`${style.cartBodyBill}`}>
               <span>
                 <ShoppingBag /> Handling charge
               </span>
-              <span>
-                {HANDLING_FEE} <Dollar2 />
-              </span>
+              <span>₹ {HANDLING_FEE}</span>
             </div>
             <div className={`${style.cartBodyBill}`}>
               <span>Grand Total</span>
-              <span>
-                {totalItemPrice + DELIVERY_FEE + HANDLING_FEE}
-                <Dollar2 />
-              </span>
+              <span>₹ {totalItemPrice + DELIVERY_FEE + HANDLING_FEE}</span>
             </div>
           </article>
         </section>

@@ -33,12 +33,8 @@ export default function ImagesContainer({
 
 const ImageItem = ({ imageUrl, productName }: ImageItem) => {
   return (
-    <div>
-      <img
-        className={`${style.imageListImg}`}
-        src={imageUrl}
-        alt={productName}
-      />
+    <div className={`${style.imageListImg}`}>
+      <img src={imageUrl} alt={productName} />
     </div>
   );
 };

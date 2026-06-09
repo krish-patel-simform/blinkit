@@ -5,7 +5,7 @@ import ProductListPresenter from "./ProductListPresenter";
 export default function Main() {
   return (
     <div className={`${style.mainContainer}`}>
-      <section>
+      <section className={style.mainBannerContainer}>
         {/* Banners */}
         <BannerPresenter />
       </section>

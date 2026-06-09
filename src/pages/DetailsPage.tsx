@@ -24,7 +24,7 @@ export default function DetailsPage() {
   }
 
   return (
-    <div className="flex gap-8 justify-between">
+    <div className="h-full flex gap-8 justify-between p-8!">
       <div className="flex-1">
         <ImagesContainer assets={product.assets} productName={product.name} />
       </div>

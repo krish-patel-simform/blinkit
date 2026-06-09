@@ -17,5 +17,5 @@
 }
 
 .imageListImg {
-  @apply cursor-pointer;
+  @apply cursor-pointer h-16 aspect-square;
 }

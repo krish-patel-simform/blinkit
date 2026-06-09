@@ -1,37 +1,36 @@
 @reference 'tailwindcss';
 
 .cartModalContainer {
-    @apply h-screen w-screen backdrop-blur-md absolute flex justify-end;
+  @apply h-screen w-screen backdrop-blur-md fixed flex justify-end z-10;
 }
 
-.cartModal{
-    @apply h-full w-[25rem] bg-(--bg-primary) flex flex-col gap-4 justify-between p-4 overflow-hidden;
+.cartModal {
+  @apply h-full w-[25rem] bg-(--bg-primary) flex flex-col gap-4 justify-between p-4 overflow-hidden;
 }
 
-.cartIcon{
-    @apply cursor-pointer;
+.cartIcon {
+  @apply cursor-pointer;
 }
 
-.cartModalHeader{
-    @apply flex gap-4 justify-between items-center;
+.cartModalHeader {
+  @apply flex gap-4 justify-between items-center;
 }
-.cartBody{
-    @apply flex flex-col gap-4 grow overflow-scroll scrollbar-thin;
-}
-
-.cartBodyBill{
-    @apply flex gap-8 justify-between p-2;
-
-    & > span {
-        @apply flex;
-    }
+.cartBody {
+  @apply flex flex-col gap-4 grow overflow-scroll scrollbar-thin;
 }
 
-.cartFlex{
+.cartBodyBill {
+  @apply flex gap-8 justify-between p-2;
+
+  & > span {
     @apply flex;
+  }
 }
 
-.cartBodySection
-{
-    @apply flex flex-col gap-4 bg-(--bg-secondary) p-4 rounded-(--radius);
+.cartFlex {
+  @apply flex;
+}
+
+.cartBodySection {
+  @apply flex flex-col gap-4 bg-(--bg-secondary) p-4 rounded-(--radius);
 }

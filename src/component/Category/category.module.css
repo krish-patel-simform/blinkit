@@ -1,18 +1,43 @@
 @reference 'tailwindcss';
 
-.category{
-    @apply flex flex-col items-center justify-center cursor-pointer 
-    /* w-[110px]; */
+.category {
+  @apply flex flex-col items-center justify-center cursor-pointer 
+    /* w-[110px]; */;
 }
 
-.categoryImg{
-    @apply bg-[var(--bg-category-card)] rounded-[var(--radius)] w-fit;
+.categoryImg {
+  @apply bg-[var(--bg-category-card)] rounded-[var(--radius)] h-[188px] w-[128px];
 
-    & > img{
-        /* @apply h-[110px] w-[110px] */
-    }
+  & > img {
+    /* @apply h-[110px] w-[110px] */
+  }
 }
 
-.categoryName{
-    @apply text-center;
+.imageHidden {
+  @apply hidden;
+}
+
+.imageVisible {
+  @apply block;
+}
+
+.imageSkeleton {
+  @apply h-full w-full bg-[#eee];
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.categoryName {
+  @apply text-center;
 }

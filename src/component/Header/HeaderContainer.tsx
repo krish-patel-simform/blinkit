@@ -11,16 +11,16 @@ import CartModal from "../Modal/CartModal";
 export default function Header() {
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
-  useEffect(()=>{
-    if(isCartModalOpen)
-    {
-      // document.body.style.overflow = 'hidden'
+  useEffect(() => {
+    if (isCartModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
     }
-  },[isCartModalOpen])
+  }, [isCartModalOpen]);
 
-  function handleCartBtn()
-  {
-    setIsCartModalOpen(true)
+  function handleCartBtn() {
+    setIsCartModalOpen(true);
   }
 
   function handleOnClose() {
@@ -40,42 +40,42 @@ export default function Header() {
 
   return (
     <>
-      {isCartModalOpen ? (
+      {isCartModalOpen && (
         <CartModal
           handleOnClose={handleOnClose}
           handleOnSuccess={handleOnSuccess}
         />
-      ) : (
-        <div className={`${style.header}`}>
-          <section className={`${style.headerLogo}`}>
-            {/* Logo */}
-            <img src={logo} />
-          </section>
-          <section className={`${style.headerLocation}`}>
-            {/* location and set Location */}
-            <p>Dilevery in 8 minutes</p>
-            <p>address from location</p>
-          </section>
-          <section className={`${style.headerActions}`}>
-            <Input
-              leftIcon={<Search4 />}
-              name="search"
-              type="search"
-              placeholder="Search milk.."
-              containerStyleClass={style.headerInputAction}
-            />
-
-            <Button mode="Secondary" title="Login" />
-
-            <Button
-              leftIcon={<CartShopping />}
-              mode="Primary"
-              onClick={handleCartBtn}
-              title={`${totalItem} Cart`}
-            />
-          </section>
-        </div>
       )}
+      <div className={`${style.header}`}>
+        <section className={`${style.headerLogo}`}>
+          {/* Logo */}
+          <img src={logo} />
+        </section>
+        <section className={`${style.headerLocation}`}>
+          {/* location and set Location */}
+          <p>Dilevery in 8 minutes</p>
+          <p>address from location</p>
+        </section>
+        <section className={`${style.headerActions}`}>
+          <Input
+            leftIcon={<Search4 />}
+            name="search"
+            type="search"
+            placeholder="Search milk.."
+            containerStyleClass={style.headerInputAction}
+          />
+
+          <Button mode="Secondary" title="Login" />
+
+          <Button
+            leftIcon={<CartShopping />}
+            mode="Primary"
+            onClick={handleCartBtn}
+            title={`${totalItem} Cart`}
+          />
+        </section>
+      </div>
+      )
     </>
   );
 }
