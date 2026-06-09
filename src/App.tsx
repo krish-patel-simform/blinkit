@@ -1,15 +1,15 @@
 import "./App.css";
-import Header from "./component/Header/HeaderContainer";
-import Main from "./component/Main/Main";
-import GlobalContextProvider from "./Provider/GlobalContextProvider";
+import RoutesProvider from "./Routes/RoutesProvider";
 
 function App() {
   return (
     <>
-      <GlobalContextProvider>
+      {/* <GlobalContextProvider>
         <Header />
         <Main />
-      </GlobalContextProvider>
+        <DetailsPage />
+      </GlobalContextProvider> */}
+      <RoutesProvider />
     </>
   );
 }

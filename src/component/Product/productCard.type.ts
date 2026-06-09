@@ -1,6 +1,7 @@
 import type React from "react";
 import type { Product } from "../../types";
 import type { SelectedProductReducerAction } from "../../Reducer/selectedProductReducer";
+import type { MouseEvent } from "react";
 
 export type QuantityAction =
   | {
@@ -29,8 +30,9 @@ export type ProductCardProps = {
 
 export type ProductPresenterProps = {
   quantity: number;
-  onIncrease: () => void;
-  onDecrease: () => void;
+  onIncrease: (e: MouseEvent<SVGSVGElement>) => void;
+  onDecrease: (e: MouseEvent<SVGSVGElement>) => void;
   product: Product;
   orientation: CardOrientation;
+  onCardClick: () => void;
 };

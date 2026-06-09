@@ -6,7 +6,8 @@ import type {
   ProductCardProps,
   ProductPresenterProps,
 } from "./productCard.type";
-import { memo } from "react";
+import { memo, type MouseEvent } from "react";
+import { useNavigate } from "react-router";
 
 function ProductCardPresenter({
   quantity,
@@ -14,9 +15,13 @@ function ProductCardPresenter({
   onDecrease,
   product,
   orientation,
+  onCardClick,
 }: ProductPresenterProps) {
   return (
-    <div className={` ${style.product} ${style[`product${orientation}`]}`}>
+    <div
+      onClick={onCardClick}
+      className={` ${style.product} ${style[`product${orientation}`]}`}
+    >
       <section>
         {/* Img */}
         <img
@@ -47,15 +52,18 @@ function ProductCard({
   orientation,
   quantity,
 }: ProductCardProps) {
-  console.log("Product card re render");
+  const navigate = useNavigate();
 
-  function handleIncrease() {
+  function handleIncrease(e: MouseEvent<SVGSVGElement>) {
+    e.stopPropagation();
     dispatchSelectedProducts({
       type: "increaseQuantity",
       payload: { product: product },
     });
   }
-  function handleDecrease() {
+
+  function handleDecrease(e: MouseEvent<SVGSVGElement>) {
+    e.stopPropagation();
     const newQuantity = quantity - 1;
 
     if (newQuantity === 0) {
@@ -74,6 +82,10 @@ function ProductCard({
     }
   }
 
+  function handleOnClick() {
+    navigate(`/${product.product_id}`);
+  }
+
   return (
     <ProductCardPresenter
       quantity={quantity}
@@ -81,6 +93,7 @@ function ProductCard({
       onDecrease={handleDecrease}
       product={product}
       orientation={orientation}
+      onCardClick={handleOnClick}
     />
   );
 }

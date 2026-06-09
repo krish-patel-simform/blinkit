@@ -1,0 +1,21 @@
+@reference 'tailwindcss';
+
+.imageContainer {
+  @apply flex flex-col gap-4;
+}
+
+.imagePreviewContainer {
+  @apply h-fit w-fit;
+}
+
+.imagePreview {
+  @apply h-[30rem] aspect-square;
+}
+
+.imageList {
+  @apply flex gap-4;
+}
+
+.imageListImg {
+  @apply cursor-pointer;
+}
