@@ -6,7 +6,7 @@
 }
 
 .categoryImg {
-  @apply bg-[var(--bg-category-card)] rounded-[var(--radius)] h-[188px] w-[128px];
+  @apply bg-(--bg-category-card) rounded-[var(--radius)] h-[180px] w-[120px];
 
   & > img {
     /* @apply h-[110px] w-[110px] */
@@ -22,7 +22,7 @@
 }
 
 .imageSkeleton {
-  @apply h-full w-full bg-[#eee];
+  @apply h-full w-full bg-(--bg-category-card);
   animation: pulse 1s infinite;
 }
 

@@ -6,8 +6,9 @@ import type {
   ProductCardProps,
   ProductPresenterProps,
 } from "./productCard.type";
-import { memo, type MouseEvent } from "react";
+import { memo, useState, type MouseEvent } from "react";
 import { useNavigate } from "react-router";
+import Spinner from "../LoadingSpinner/Spinner";
 
 function ProductCardPresenter({
   quantity,
@@ -16,17 +17,30 @@ function ProductCardPresenter({
   product,
   orientation,
   onCardClick,
+  isImageLoading,
+  onImageLoad,
 }: ProductPresenterProps) {
   return (
     <div
       onClick={onCardClick}
       className={` ${style.product} ${style[`product${orientation}`]}`}
     >
-      <section>
+      <section className={`${style[`productImageContainer${orientation}`]}`}>
         {/* Img */}
+
+        {isImageLoading && <Spinner />}
+
         <img
-          className={`${style.productImage}`}
+          className={`
+            ${
+              isImageLoading
+                ? `${style.productImageHidden}`
+                : `${style.productImageVisible}`
+            }
+              ${style.productImage}`}
           src={product.assets[0].image_url}
+          onLoad={onImageLoad}
+          onError={onImageLoad}
         />
       </section>
       <section className={`${style.productInfo}`}>
@@ -53,6 +67,8 @@ function ProductCard({
   quantity,
 }: ProductCardProps) {
   const navigate = useNavigate();
+
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   function handleIncrease(e: MouseEvent<SVGSVGElement>) {
     e.stopPropagation();
@@ -86,6 +102,10 @@ function ProductCard({
     navigate(`/${product.product_id}`);
   }
 
+  function handleOnImageLoad() {
+    setIsImageLoading(false);
+  }
+
   return (
     <ProductCardPresenter
       quantity={quantity}
@@ -94,6 +114,8 @@ function ProductCard({
       product={product}
       orientation={orientation}
       onCardClick={handleOnClick}
+      isImageLoading={isImageLoading}
+      onImageLoad={handleOnImageLoad}
     />
   );
 }

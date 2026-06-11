@@ -5,9 +5,13 @@ import ProductList from "../Product/ProductList";
 import style from "./productListPresenter.module.css";
 
 export default function ProductListPresenter() {
-  const allProdctList = useAllProductList();
+  const {loading,productList:allProdctList} = useAllProductList();
 
   const { dispatchSelectedProducts } = useGlobalContext();
+
+  if(loading){
+    return <h1>Loading...</h1>
+  }
 
   return (
     <div className={`${style.productListPresenter}`}>
