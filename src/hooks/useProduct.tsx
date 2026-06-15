@@ -3,7 +3,7 @@ import { useAllProductList } from "./useAllProductList";
 import type { Product } from "../types";
 
 function useProduct(id: number) {
-  const categories = useAllProductList();
+  const {productList:categories} = useAllProductList();
 
   const [loading, setIsLoading] = useState(true);
   const [data, setData] = useState<null | Product>();

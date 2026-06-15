@@ -6,17 +6,9 @@ import type { MouseEvent } from "react";
 export type QuantityAction =
   | {
       type: "increase";
-      // payload: {
-      //   product : Product,
-      //   dispatchSelectedProducts: React.Dispatch<SelectedProductReducerAction>;
-      // };
     }
   | {
       type: "decrease";
-      // payload: {
-      //   product : Product,
-      //   dispatchSelectedProducts: React.Dispatch<SelectedProductReducerAction>;
-      // };
     };
 
 type CardOrientation = "Vertical" | "Horizontal";
@@ -35,4 +27,6 @@ export type ProductPresenterProps = {
   product: Product;
   orientation: CardOrientation;
   onCardClick: () => void;
+  onImageLoad: () => void;
+  isImageLoading: boolean;
 };

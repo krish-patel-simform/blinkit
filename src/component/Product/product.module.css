@@ -12,8 +12,20 @@
   @apply gap-1 flex text-sm h-[7rem];
 }
 
+.productImageContainerVertical {
+  @apply h-[9.75rem] aspect-square;
+}
+
 .productImage {
   @apply h-full;
+}
+
+.productImageVisible {
+  @apply block;
+}
+
+.productImageHidden {
+  @apply hidden;
 }
 
 .productInfo {

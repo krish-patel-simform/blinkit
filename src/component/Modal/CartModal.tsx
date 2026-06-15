@@ -9,6 +9,7 @@ import CartShopping from "reicon-react/icons/CartShopping";
 import Note from "reicon-react/icons/Note";
 import Scooter from "reicon-react/icons/Scooter";
 import ShoppingBag from "reicon-react/icons/ShoppingBag";
+// import { handlePayment } from "../../Stripe/Razorpay";
 
 const HANDLING_FEE = 2;
 const DELIVERY_FEE = 10;
@@ -20,6 +21,30 @@ export default function CartModal({ handleOnClose }: CartModal) {
     (acc, product) => acc + product.price * product.quantity,
     0,
   );
+
+  async function callPaymentGateWay()
+  {
+    if(selectedProducts.length>0)
+    {
+      const items = [{name:'Handling charge',price:2,quantity:1},{name:'Delivery charge',price:10,quantity:1},...selectedProducts]
+      const response = await fetch('http://localhost:4000/checkout-session',{
+        method : "POST",
+        headers : {
+          "Content-Type" :"application/json"
+        },
+        body : JSON.stringify({amount:totalItemPrice,items:items})
+      })
+
+      console.log(response.status)
+
+      const {url} = await response.json()
+      window.location.href = url
+    }
+    else
+    {
+      alert("Please select the product")
+    }
+  }
 
   return (
     <div className={`${style.cartModalContainer}`}>
@@ -78,7 +103,7 @@ export default function CartModal({ handleOnClose }: CartModal) {
           </article>
         </section>
 
-        <Button mode="Primary" title="Proceed to payment" />
+        <Button mode="Primary" title="Proceed to payment" onClick={callPaymentGateWay}/>
       </div>
     </div>
   );

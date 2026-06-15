@@ -12,7 +12,7 @@ function useProductCategory() {
   const [categories, setCategories] = useState<Category[]>([]);
   useEffect(() => {
     async function fetchCategories() {
-      const response = await fetch(`${CONFIG.JSON_SERVER_PREFIX}/categories`);
+      const response = await fetch(`${CONFIG.JSON_CATEGORIES}`);
       const jsonData = await response.json();
 
       if (!response.ok) throw new Error("Can not get the categories");
