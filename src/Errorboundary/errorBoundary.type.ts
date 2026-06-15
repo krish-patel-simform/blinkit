@@ -7,6 +7,7 @@ export type ErrorFallbackProps = {
 
 export interface ErrorBoundaryProps extends PropsWithChildren {
   fallback: React.ComponentType<ErrorFallbackProps>;
+  max_retries: number;
 }
 
 export type ErrorBoundaryState = {

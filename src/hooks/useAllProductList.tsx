@@ -11,6 +11,8 @@ function useAllProductList(query: string = "") {
   const [productList, setProductList] = useState<ProductCategory[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // throw Error("This error for testing purpose");
+
   useEffect(() => {
     const controller = new AbortController();
 

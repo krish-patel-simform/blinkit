@@ -1,5 +1,3 @@
-import ErrorBoundary from "../../Errorboundary/ErrorBoundary";
-import ErrorFallback from "../../Errorboundary/ErrorFallback";
 import { useAllProductList } from "../../hooks/useAllProductList";
 import { useGlobalContext } from "../../hooks/useGlobalContext";
 import ProductList from "../Product/ProductList";
@@ -16,18 +14,16 @@ export default function ProductListPresenter() {
   }
 
   return (
-    <ErrorBoundary fallback={ErrorFallback}>
-      <div className={`${style.productListPresenter}`}>
-        {allProdctList.map((productCategory) => {
-          return (
-            <ProductList
-              key={productCategory.title}
-              productCategory={productCategory}
-              dispatchSelectedProducts={dispatchSelectedProducts}
-            />
-          );
-        })}
-      </div>
-    </ErrorBoundary>
+    <div className={`${style.productListPresenter}`}>
+      {allProdctList.map((productCategory) => {
+        return (
+          <ProductList
+            key={productCategory.title}
+            productCategory={productCategory}
+            dispatchSelectedProducts={dispatchSelectedProducts}
+          />
+        );
+      })}
+    </div>
   );
 }

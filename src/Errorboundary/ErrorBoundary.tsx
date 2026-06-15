@@ -31,6 +31,9 @@ class ErrorBoundary extends React.Component<
 
   handleRetry = () => {
     this.setState((prev) => {
+      if (this.state.retries >= this.props.max_retries) {
+        return null;
+      }
       return {
         error: null,
         retries: prev.retries + 1,

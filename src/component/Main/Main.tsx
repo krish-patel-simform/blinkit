@@ -1,3 +1,5 @@
+import ErrorBoundary from "../../Errorboundary/ErrorBoundary";
+import ErrorFallback from "../../Errorboundary/ErrorFallback";
 import BannerPresenter from "./BannerPresenter";
 import CategoryPresenter from "./CategoryPresenter";
 import style from "./main.module.css";
@@ -15,7 +17,9 @@ export default function Main() {
       </section>
       <section className={`${style.mainProductListContainer}`}>
         {/* List of subcategoris */}
-        <ProductListPresenter />
+        <ErrorBoundary fallback={ErrorFallback} max_retries={3}>
+          <ProductListPresenter />
+        </ErrorBoundary>
       </section>
     </div>
   );

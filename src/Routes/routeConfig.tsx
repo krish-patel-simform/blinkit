@@ -6,6 +6,8 @@ import SearchProductPage from "../pages/SearchProductPage";
 // import LoginPage from "../pages/LoginPage";
 import Success from "../Stripe/Success";
 import Cancel from "../Stripe/Cancel";
+import ErrorBoundary from "../Errorboundary/ErrorBoundary";
+import ErrorFallback from "../Errorboundary/ErrorFallback";
 
 const routeConfig: RouteObject[] = [
   {
@@ -22,19 +24,22 @@ const routeConfig: RouteObject[] = [
       },
       {
         path: "s/products",
-        Component: SearchProductPage,
+        element: (
+          <ErrorBoundary fallback={ErrorFallback} max_retries={3}>
+            <SearchProductPage />
+          </ErrorBoundary>
+        ),
       },
     ],
   },
   {
-    path:'/success',
-    Component : Success,
+    path: "/success",
+    Component: Success,
   },
   {
-    path:'/cancel',
-    Component : Cancel
-  }
-
+    path: "/cancel",
+    Component: Cancel,
+  },
 ];
 
 export const router = createBrowserRouter(routeConfig);

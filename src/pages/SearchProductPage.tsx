@@ -4,9 +4,6 @@ import { useAllProductList } from "../hooks/useAllProductList";
 import type { Product, ProductCategory } from "../types";
 import { useGlobalContext } from "../hooks/useGlobalContext";
 import ProductCard from "../component/Product/ProductCard";
-import ErrorBoundary from "../Errorboundary/ErrorBoundary";
-import ErrorFallback from "../Errorboundary/ErrorFallback";
-
 export default function SearchProductPage() {
   const [searchParam] = useSearchParams();
   const query = searchParam.get("search") || "";
@@ -41,26 +38,24 @@ export default function SearchProductPage() {
 
   return (
     <div className="w-full h-full min-h-screen">
-      <ErrorBoundary fallback={ErrorFallback}>
-        <p>{filterProducts.title}</p>
-        <div className="grid grid-cols-6 gap-4 p-8!">
-          {filterProducts.products.map((product) => {
-            return (
-              <ProductCard
-                key={product.product_id}
-                product={product}
-                orientation="Vertical"
-                dispatchSelectedProducts={dispatchSelectedProducts}
-                quantity={
-                  selectedProducts.find(
-                    (p) => p.product_id === product.product_id,
-                  )?.quantity ?? 0
-                }
-              />
-            );
-          })}
-        </div>
-      </ErrorBoundary>
+      <p>{filterProducts.title}</p>
+      <div className="grid grid-cols-6 gap-4 p-8!">
+        {filterProducts.products.map((product) => {
+          return (
+            <ProductCard
+              key={product.product_id}
+              product={product}
+              orientation="Vertical"
+              dispatchSelectedProducts={dispatchSelectedProducts}
+              quantity={
+                selectedProducts.find(
+                  (p) => p.product_id === product.product_id,
+                )?.quantity ?? 0
+              }
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
