@@ -22,14 +22,11 @@ function useAllProductList(query: string = "") {
         setLoading(true);
 
         // Temporary delay for testing
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        // await new Promise((resolve) => setTimeout(resolve, 3000));
 
-        const response = await fetch(
-          `${CONFIG.JSON_PRODUCTS}`,
-          {
-            signal: controller.signal,
-          }
-        );
+        const response = await fetch(`${CONFIG.JSON_PRODUCTS}`, {
+          signal: controller.signal,
+        });
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
@@ -54,21 +51,21 @@ function useAllProductList(query: string = "") {
                 product_id: product.product_id,
               };
             }),
-          })
+          }),
         );
 
         console.log("Response Received:", query);
 
-        if(!active) return
+        if (!active) return;
 
         setProductList(filterProductList);
-        setLoading(false)
+        setLoading(false);
       } catch (error) {
         if ((error as Error).name === "AbortError") {
           console.log("Request Aborted:", query);
           return;
         }
-        setLoading(false)
+        setLoading(false);
 
         console.error(error);
       }
@@ -79,7 +76,7 @@ function useAllProductList(query: string = "") {
     return () => {
       console.log("Cleanup:", query);
       controller.abort();
-      active = false
+      active = false;
     };
   }, [query]);
 
