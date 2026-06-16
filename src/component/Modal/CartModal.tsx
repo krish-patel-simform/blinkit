@@ -10,7 +10,7 @@ import Note from "reicon-react/icons/Note";
 import Scooter from "reicon-react/icons/Scooter";
 import ShoppingBag from "reicon-react/icons/ShoppingBag";
 import { useState } from "react";
-import { fa } from "zod/locales";
+import { CONFIG } from "../../Conast/config";
 // import { handlePayment } from "../../Stripe/Razorpay";
 
 const HANDLING_FEE = 2;
@@ -35,13 +35,16 @@ export default function CartModal({ handleOnClose }: CartModal) {
       ];
       setIsPaymentProcessing(true);
       try {
-        const response = await fetch("http://localhost:4000/checkout-session", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+        const response = await fetch(
+          `${CONFIG.STRIPE_SERVER}/checkout-session`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ amount: totalItemPrice, items: items }),
           },
-          body: JSON.stringify({ amount: totalItemPrice, items: items }),
-        });
+        );
 
         console.log(response.status);
 
