@@ -54,9 +54,14 @@ export default function Header() {
 
   function handleOnChange(e: ChangeEvent<HTMLInputElement>) {
     const { value } = e.target;
-    setSearchParam({
-      search: value,
-    });
+    setSearchParam(
+      {
+        search: value,
+      },
+      {
+        replace: true,
+      },
+    );
   }
 
   function handleLogoutClick() {
