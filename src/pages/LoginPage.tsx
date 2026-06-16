@@ -1,43 +1,94 @@
 import Button from "../component/Button/Button";
 import Input from "../component/Input/Input";
-import AppLogo from '../assets/app_logo.svg'
-import { useForm ,type SubmitHandler, type SubmitErrorHandler} from "react-hook-form";
-import { loginSchema, type LoginSchema } from "../schema";
+import AppLogo from "../assets/app_logo.svg";
+
+import {
+  useForm,
+  type SubmitHandler,
+  type SubmitErrorHandler,
+} from "react-hook-form";
+
 import { zodResolver } from "@hookform/resolvers/zod";
+import { loginSchema, type LoginSchema } from "../schema";
+import { loginUser } from "../firebase/loginUser";
+import { Link, useNavigate } from "react-router";
 
 export default function LoginPage() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginSchema>({
+    resolver: zodResolver(loginSchema),
+  });
 
-    const {register,handleSubmit}  = useForm<LoginSchema>({
-        resolver : zodResolver(loginSchema)
-    })
+  const navigate = useNavigate();
 
-    const onSubmit:SubmitHandler<LoginSchema> = (data)=>{
-        console.log(data)
+  const handleLogin: SubmitHandler<LoginSchema> = async (data) => {
+    const isAuthenticated = await loginUser(data.email, data.password);
+
+    if (isAuthenticated) {
+      navigate("/", { replace: true });
     }
+  };
 
-    const onError:SubmitErrorHandler<LoginSchema> = (error)=>{
-        console.error(error)
-    }
+  const onError: SubmitErrorHandler<LoginSchema> = (error) => {
+    console.log(error);
+  };
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center ">
-       <div className="flex flex-col gap-4 shadow-lg rounded-lg p-8!">
-            <img src={AppLogo} alt="AppLogo" loading="lazy" height={'64px'} width={'64px'}/>
-            <h1>India's last minutes app</h1> 
-            <p>Login or signin app</p>
+    <div className="w-screen h-screen flex justify-center items-center bg-gray-100 ">
+      <div className="w-[400px] bg-white rounded-2xl shadow-xl p-8! flex flex-col gap-5">
+        <img src={AppLogo} alt="AppLogo" className="w-16 h-16" />
 
-            <form onSubmit={handleSubmit(onSubmit,onError)}>
+        <div>
+          <h1 className="text-2xl font-bold">Welcome Back 👋</h1>
+
+          <p className="text-gray-500">Login to continue shopping</p>
+        </div>
+
+        <form
+          className="flex flex-col gap-4"
+          onSubmit={handleSubmit(handleLogin, onError)}
+        >
+          <div>
             <Input
-                type="email"
-                inputMode="numeric"
-                placeholder="Enter your email"
-                {...register('phoneNumber')}
+              type="email"
+              placeholder="Enter your email"
+              {...register("email")}
             />
 
-            <Button mode="Primary" title="Login" />
-            </form>
+            {errors.email && (
+              <span className="text-red-500 text-sm">
+                {errors.email.message}
+              </span>
+            )}
+          </div>
 
-       </div> 
+          <div>
+            <Input
+              type="password"
+              placeholder="Enter your password"
+              {...register("password")}
+            />
+
+            {errors.password && (
+              <span className="text-red-500 text-sm">
+                {errors.password.message}
+              </span>
+            )}
+          </div>
+
+          <Button title="Login" mode="Primary" />
+        </form>
+
+        <p className="text-center text-sm">
+          New member?{" "}
+          <Link to="/signup" className="text-green-600 font-medium underline">
+            Sign Up
+          </Link>
+        </p>
+      </div>
     </div>
-  )
+  );
 }

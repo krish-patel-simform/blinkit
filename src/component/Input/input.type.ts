@@ -1,10 +1,17 @@
 import type { InputHTMLAttributes, ReactNode } from "react";
 
-type InputType = 'text' | "search" | 'checkbox' | 'date' | 'email' | 'number'
+type InputType =
+  | "text"
+  | "search"
+  | "checkbox"
+  | "date"
+  | "email"
+  | "number"
+  | "password";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-    containerStyleClass ?: string,
-    type:InputType,
-    name:string,
-    leftIcon?:ReactNode
+  containerStyleClass?: string;
+  type: InputType;
+  name: string;
+  leftIcon?: ReactNode;
 }

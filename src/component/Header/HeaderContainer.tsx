@@ -10,10 +10,11 @@ import CartModal from "../Modal/CartModal";
 // import { useAbortController } from "../../hooks/useAbortController";
 import { useNavigate, useSearchParams } from "react-router";
 import { useLocation } from "react-router";
+import { removeUserId } from "../../utils";
 
 export default function Header() {
   const navigate = useNavigate();
-  const location = useLocation()
+  const location = useLocation();
 
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
@@ -47,8 +48,8 @@ export default function Header() {
   );
 
   function handleSerachClick() {
-    if(location.pathname !== '/s/products') 
-      navigate(`/s/products`,{replace : true});
+    if (location.pathname !== "/s/products")
+      navigate(`/s/products`, { replace: true });
   }
 
   function handleOnChange(e: ChangeEvent<HTMLInputElement>) {
@@ -58,10 +59,13 @@ export default function Header() {
     });
   }
 
-  function handleLogoClick()
-  {
-    if(location.pathname !== '/')
-      navigate('/',{replace : true})
+  function handleLogoutClick() {
+    removeUserId();
+    navigate("/login", { replace: true });
+  }
+
+  function handleLogoClick() {
+    if (location.pathname !== "/") navigate("/", { replace: true });
   }
 
   return (
@@ -75,7 +79,7 @@ export default function Header() {
       <div className={`${style.header}`}>
         <section className={`${style.headerLogo}`}>
           {/* Logo */}
-          <img src={logo} onClick={handleLogoClick}/>
+          <img src={logo} onClick={handleLogoClick} />
         </section>
         <section className={`${style.headerLocation}`}>
           {/* location and set Location */}
@@ -94,7 +98,7 @@ export default function Header() {
             value={searchParam.get("search") || ""}
           />
 
-          <Button mode="Secondary" title="Login" />
+          <Button mode="Secondary" title="Logout" onClick={handleLogoutClick} />
 
           <Button
             leftIcon={<CartShopping />}

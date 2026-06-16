@@ -8,30 +8,39 @@ import Success from "../Stripe/Success";
 import Cancel from "../Stripe/Cancel";
 import ErrorBoundary from "../Errorboundary/ErrorBoundary";
 import ErrorFallback from "../Errorboundary/ErrorFallback";
+import LoginPage from "../pages/LoginPage";
+import SignupPage from "../pages/SignupPage";
+import ProtectedRoute from "./ProtectedRoute";
 
 const routeConfig: RouteObject[] = [
   {
-    path: "/",
-    Component: HomePage,
+    Component: ProtectedRoute,
     children: [
       {
-        index: true,
-        Component: Main,
-      },
-      {
-        path: ":productId",
-        Component: DetailsPage,
-      },
-      {
-        path: "s/products",
-        element: (
-          <ErrorBoundary fallback={ErrorFallback} max_retries={3}>
-            <SearchProductPage />
-          </ErrorBoundary>
-        ),
+        path: "/",
+        Component: HomePage,
+        children: [
+          {
+            index: true,
+            Component: Main,
+          },
+          {
+            path: ":productId",
+            Component: DetailsPage,
+          },
+          {
+            path: "s/products",
+            element: (
+              <ErrorBoundary fallback={ErrorFallback} max_retries={3}>
+                <SearchProductPage />
+              </ErrorBoundary>
+            ),
+          },
+        ],
       },
     ],
   },
+
   {
     path: "/success",
     Component: Success,
@@ -39,6 +48,14 @@ const routeConfig: RouteObject[] = [
   {
     path: "/cancel",
     Component: Cancel,
+  },
+  {
+    path: "/login",
+    Component: LoginPage,
+  },
+  {
+    path: "/signup",
+    Component: SignupPage,
   },
 ];
 
