@@ -10,6 +10,7 @@ import Note from "reicon-react/icons/Note";
 import Scooter from "reicon-react/icons/Scooter";
 import ShoppingBag from "reicon-react/icons/ShoppingBag";
 import { useState } from "react";
+import { fa } from "zod/locales";
 // import { handlePayment } from "../../Stripe/Razorpay";
 
 const HANDLING_FEE = 2;
@@ -32,21 +33,25 @@ export default function CartModal({ handleOnClose }: CartModal) {
         { name: "Delivery charge", price: 10, quantity: 1 },
         ...selectedProducts,
       ];
-      const response = await fetch("http://localhost:4000/checkout-session", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ amount: totalItemPrice, items: items }),
-      });
-      if (response.ok) {
+      setIsPaymentProcessing(true);
+      try {
+        const response = await fetch("http://localhost:4000/checkout-session", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ amount: totalItemPrice, items: items }),
+        });
+
+        console.log(response.status);
+
+        const { url } = await response.json();
+        window.location.href = url;
+      } catch (error) {
+        console.log("Error in the CartModal" + error);
+      } finally {
         setIsPaymentProcessing(false);
       }
-
-      console.log(response.status);
-
-      const { url } = await response.json();
-      window.location.href = url;
     } else {
       alert("Please select the product");
     }
