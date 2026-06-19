@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function PaymentSuccessPage() {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-white shadow-lg rounded-xl p-8! w-[400px] text-center">
+      <div className="bg-white shadow-lg rounded-xl p-8! w-100 text-center">
         <CheckCircle size={80} className="mx-auto text-green-600 mb-4" />
 
         <h1 className="text-3xl font-bold text-green-600">

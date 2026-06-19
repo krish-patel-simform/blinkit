@@ -1,5 +1,6 @@
 import ErrorBoundary from "../../Errorboundary/ErrorBoundary";
 import ErrorFallback from "../../Errorboundary/ErrorFallback";
+import Footer from "../Footer/Footer";
 import BannerPresenter from "./BannerPresenter";
 import CategoryPresenter from "./CategoryPresenter";
 import style from "./main.module.css";
@@ -21,6 +22,7 @@ export default function Main() {
           <ProductListPresenter />
         </ErrorBoundary>
       </section>
+      <Footer />
     </div>
   );
 }

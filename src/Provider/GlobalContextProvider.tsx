@@ -1,15 +1,22 @@
-import {  useReducer,  type PropsWithChildren } from "react";
-import { GlobalContext } from "../Context/GlobalContext";
+import { useReducer, useRef, type PropsWithChildren } from "react";
+import {
+  GlobalContext,
+  type GlobalContextType,
+} from "../Context/GlobalContext";
 import { selectedProductReducer } from "../Reducer/selectedProductReducer";
 
-
 export default function GlobalContextProvider({ children }: PropsWithChildren) {
+  const [selectedProducts, dispatchSelectedProducts] = useReducer(
+    selectedProductReducer,
+    [],
+  );
 
-  const [selectedProducts,dispatchSelectedProducts] = useReducer(selectedProductReducer,[])
+  const searchRef = useRef<HTMLInputElement>(null);
 
-  const value = {
+  const value: GlobalContextType = {
     selectedProducts,
-    dispatchSelectedProducts 
+    dispatchSelectedProducts,
+    searchRef,
   };
 
   return <GlobalContext value={value}>{children}</GlobalContext>;

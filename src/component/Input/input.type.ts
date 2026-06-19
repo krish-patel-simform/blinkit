@@ -1,4 +1,4 @@
-import type { InputHTMLAttributes, ReactNode } from "react";
+import type { InputHTMLAttributes, ReactNode, Ref } from "react";
 
 type InputType =
   | "text"
@@ -14,4 +14,5 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   type: InputType;
   name: string;
   leftIcon?: ReactNode;
+  ref?: Ref<HTMLInputElement>;
 }

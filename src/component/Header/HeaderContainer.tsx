@@ -13,9 +13,10 @@ import { useLocation } from "react-router";
 import { removeUserId } from "../../utils";
 
 export default function Header() {
+  const { searchRef } = useGlobalContext();
+
   const navigate = useNavigate();
   const location = useLocation();
-
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
   const [searchParam, setSearchParam] = useSearchParams();
@@ -93,13 +94,15 @@ export default function Header() {
         </section>
         <section className={`${style.headerActions}`}>
           <Input
+            ref={searchRef}
+            id="search"
             leftIcon={<Search4 />}
             name="search"
             type="search"
             placeholder="Search milk.."
             containerStyleClass={style.headerInputAction}
             onChange={handleOnChange}
-            onClick={handleSerachClick}
+            onFocus={handleSerachClick}
             value={searchParam.get("search") || ""}
           />
 
