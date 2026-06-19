@@ -137,7 +137,7 @@ export default function Header() {
             leftIcon={<CartShopping />}
             mode="Primary"
             onClick={handleCartBtn}
-            title={`${totalItem} Cart`}
+            title={` ${totalItem} Cart`}
           />
         </section>
       </div>
