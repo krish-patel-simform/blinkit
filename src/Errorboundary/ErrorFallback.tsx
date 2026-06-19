@@ -5,9 +5,11 @@ export default function ErrorFallback({ error, onRetry }: ErrorFallbackProps) {
   console.log("Error Boundary called");
 
   return (
-    <div className="h-screen w-screen flex justify-center items-start">
+    <div className="h-full w-full flex flex-col items-center">
       <p>Something went wrong : {error.message}</p>
-      <Button mode="Primary" title="Retry" onClick={onRetry} />
+      <div>
+        <Button mode="Primary" title="Retry" onClick={onRetry} />
+      </div>
     </div>
   );
 }
