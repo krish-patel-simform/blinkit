@@ -29,3 +29,9 @@ export type ProductCategory = {
   title: string;
   products: Product[];
 };
+
+export type Filters =
+  | "All"
+  | "Dairy, Bread & Eggs"
+  | "Snacks & Munchies"
+  | "Cold Drinks & Juices";

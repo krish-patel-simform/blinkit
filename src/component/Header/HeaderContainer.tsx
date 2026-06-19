@@ -7,10 +7,15 @@ import Search4 from "reicon-react/icons/Search4";
 import CartShopping from "reicon-react/icons/CartShop";
 import { useGlobalContext } from "../../hooks/useGlobalContext";
 import CartModal from "../Modal/CartModal";
-// import { useAbortController } from "../../hooks/useAbortController";
 import { useNavigate, useSearchParams } from "react-router";
 import { useLocation } from "react-router";
 import { removeUserId } from "../../utils";
+const FILTER_OPTION = [
+  "All",
+  "Dairy, Bread & Eggs",
+  "Snacks & Munchies",
+  "Cold Drinks & Juices",
+];
 
 export default function Header() {
   const { searchRef } = useGlobalContext();
@@ -20,6 +25,8 @@ export default function Header() {
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
   const [searchParam, setSearchParam] = useSearchParams();
+
+  const { selectedProducts } = useGlobalContext();
 
   useEffect(() => {
     if (isCartModalOpen) {
@@ -40,8 +47,6 @@ export default function Header() {
   function handleOnSuccess() {
     console.log("Your is placed");
   }
-
-  const { selectedProducts } = useGlobalContext();
 
   const totalItem = selectedProducts.reduce(
     (acc, product) => acc + product.quantity,
@@ -74,6 +79,18 @@ export default function Header() {
     if (location.pathname !== "/") navigate("/", { replace: true });
   }
 
+  function handleFilterChange(e: ChangeEvent<HTMLSelectElement>) {
+    const value = e.target.value;
+    setSearchParam(
+      {
+        category: value,
+      },
+      {
+        replace: true,
+      },
+    );
+  }
+
   return (
     <>
       {isCartModalOpen && (
@@ -89,8 +106,16 @@ export default function Header() {
         </section>
         <section className={`${style.headerLocation}`}>
           {/* location and set Location */}
-          <p>Dilevery in 8 minutes</p>
-          <p>address from location</p>
+          <select onChange={handleFilterChange}>
+            {FILTER_OPTION.map((filter) => (
+              <option
+                selected={filter === searchParam.get("category")}
+                value={filter}
+              >
+                {filter}
+              </option>
+            ))}
+          </select>
         </section>
         <section className={`${style.headerActions}`}>
           <Input

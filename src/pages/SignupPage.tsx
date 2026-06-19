@@ -38,7 +38,7 @@ export default function SignupPage() {
 
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-yellow-50 ">
-      <div className="w-[400px] bg-white rounded-2xl shadow-xl p-8! flex flex-col gap-5 border border-yellow-200">
+      <div className="w-100 bg-white rounded-2xl shadow-xl p-8! flex flex-col gap-5 border border-yellow-200">
         <img src={AppLogo} alt="AppLogo" className="w-16 h-16" />
 
         <div>

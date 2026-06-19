@@ -38,7 +38,7 @@ export default function LoginPage() {
 
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-gray-100 ">
-      <div className="w-[400px] bg-white rounded-2xl shadow-xl p-8! flex flex-col gap-5">
+      <div className="w-100 bg-white rounded-2xl shadow-xl p-8! flex flex-col gap-5">
         <img src={AppLogo} alt="AppLogo" className="w-16 h-16" />
 
         <div>
