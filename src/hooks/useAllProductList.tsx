@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import type { Product, ProductCategory } from "../types";
-import { CONFIG } from "../Conast/config";
+import type { Product } from "../types";
+
+import { useGetAllProductListQuery } from "../redux/API/ProductListApi";
 
 type RawProductList = {
   title: string;
@@ -8,83 +8,43 @@ type RawProductList = {
 };
 
 function useAllProductList(query: string = "") {
-  const [productList, setProductList] = useState<ProductCategory[]>([]);
-  const [loading, setLoading] = useState(true);
+  // * Used RTK Query
 
-  // throw Error("This error for testing purpose");
+  const { data, error, isLoading } = useGetAllProductListQuery(query);
 
-  useEffect(() => {
-    const controller = new AbortController();
+  console.log("Data from the RTK:", data);
 
-    let active = true;
-    async function fetchProductList() {
-      try {
-        console.log("Request Started:", query);
+  const productList =
+    data?.map((list: RawProductList) => ({
+      title: list.title,
+      products: list.products.map((productRaw: [Product]) => {
+        const product = productRaw[0];
 
-        setLoading(true);
+        return {
+          price: product.price,
+          unit: product.unit,
+          unit_price: product.unit_price,
+          unit_type: product.unit_type,
+          brand: product.brand,
+          name: product.name,
+          assets: product.assets,
+          product_id: product.product_id,
+        };
+      }),
+    })) ?? [];
 
-        // Temporary delay for testing
-        // await new Promise((resolve) => setTimeout(resolve, 3000));
+  console.log("In Hook :", productList);
 
-        const response = await fetch(`${CONFIG.JSON_PRODUCTS}`, {
-          signal: controller.signal,
-        });
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch products");
-        }
-
-        const jsonData = await response.json();
-
-        const filterProductList: ProductCategory[] = jsonData.map(
-          (list: RawProductList) => ({
-            title: list.title,
-            products: list.products.map((productRaw: [Product]) => {
-              const product = productRaw[0];
-
-              return {
-                price: product.price,
-                unit: product.unit,
-                unit_price: product.unit_price,
-                unit_type: product.unit_type,
-                brand: product.brand,
-                name: product.name,
-                assets: product.assets,
-                product_id: product.product_id,
-              };
-            }),
-          }),
-        );
-
-        console.log("Response Received:", query);
-
-        if (!active) return;
-
-        setProductList(filterProductList);
-        setLoading(false);
-      } catch (error) {
-        if ((error as Error).name === "AbortError") {
-          console.log("Request Aborted:", query);
-          return;
-        }
-        setLoading(false);
-
-        console.error(error);
-      }
+  if (error) {
+    if ("status" in error) {
+      throw new Error("Error in the fetching all productlist");
     }
-
-    fetchProductList();
-
-    return () => {
-      console.log("Cleanup:", query);
-      controller.abort();
-      active = false;
-    };
-  }, [query]);
+    throw new Error(error.message);
+  }
 
   return {
     productList,
-    loading,
+    loading: isLoading,
   };
 }
 

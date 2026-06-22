@@ -4,6 +4,7 @@ import { useAllProductList } from "../hooks/useAllProductList";
 import type { Product, ProductCategory } from "../types";
 import { useGlobalContext } from "../hooks/useGlobalContext";
 import ProductCard from "../component/Product/ProductCard";
+
 export default function SearchProductPage() {
   const [searchParam] = useSearchParams();
   const query = searchParam.get("search") || "";
@@ -16,9 +17,12 @@ export default function SearchProductPage() {
       for (const category of categories) {
         products.push(
           ...category.products.filter((product) =>
-            product.name.toLowerCase().includes(query),
+            product.name.toLowerCase().includes(query.toLowerCase()),
           ),
         );
+
+        console.log("category after filter:");
+        console.log(products);
       }
 
       return { title: query, products };
@@ -26,8 +30,8 @@ export default function SearchProductPage() {
     return { title: query, products: [] };
   }, [categories, query]);
 
-  console.log("loading:", loading);
-  console.log("searchProduct Page re render");
+  // console.log("loading:", loading);
+  // console.log("searchProduct Page re render");
   console.log("search product page", filterProducts);
 
   if (!query) return <h1>Search milk...</h1>;

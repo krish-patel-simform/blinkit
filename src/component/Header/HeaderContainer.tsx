@@ -106,10 +106,14 @@ export default function Header() {
         </section>
         <section className={`${style.headerLocation}`}>
           {/* location and set Location */}
-          <select onChange={handleFilterChange}>
-            {FILTER_OPTION.map((filter) => (
+          <select
+            value={searchParam.get("category") ?? ""}
+            onChange={handleFilterChange}
+          >
+            {FILTER_OPTION.map((filter, index) => (
               <option
-                selected={filter === searchParam.get("category")}
+                key={filter + index}
+                // selected={filter === searchParam.get("category")}
                 value={filter}
               >
                 {filter}
