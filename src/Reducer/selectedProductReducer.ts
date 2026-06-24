@@ -40,10 +40,9 @@ function selectedProductReducer(
           quantity: prevState[productIndex].quantity + 1,
         };
 
-        const prefix = prevState.slice(0, productIndex);
-        const sufix = prevState.slice(productIndex + 1);
-
-        return [...prefix, newProduct, ...sufix];
+        return prevState.map((p) =>
+          p.product_id === product.product_id ? newProduct : p,
+        );
       }
     }
     case "decreaseQuantity": {

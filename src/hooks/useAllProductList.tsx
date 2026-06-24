@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Product, ProductCategory } from "../types";
-import { CONFIG } from "../Conast/config";
+import { CONFIG } from "../consts/config";
 
 type RawProductList = {
   title: string;

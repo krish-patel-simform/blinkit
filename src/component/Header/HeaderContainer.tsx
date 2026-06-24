@@ -19,6 +19,7 @@ export default function Header() {
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
   const [searchParam, setSearchParam] = useSearchParams();
+  const { selectedProducts } = useCartContext();
 
   useEffect(() => {
     if (isCartModalOpen) {
@@ -40,19 +41,12 @@ export default function Header() {
     console.log("Your is placed");
   }
 
-  const { selectedProducts } = useCartContext();
-
-  const totalItem = selectedProducts.reduce(
-    (acc, product) => acc + product.quantity,
-    0,
-  );
-
-  function handleSerachClick() {
+  function handleSearchClick() {
     if (location.pathname !== "/s/products")
       navigate(`/s/products`, { replace: true });
   }
 
-  function handleOnChange(e: ChangeEvent<HTMLInputElement>) {
+  function handleSearchOnChange(e: ChangeEvent<HTMLInputElement>) {
     const { value } = e.target;
     setSearchParam(
       {
@@ -70,8 +64,13 @@ export default function Header() {
   }
 
   function handleLogoClick() {
-    if (location.pathname !== "/") navigate("/", { replace: true });
+    if (location.pathname !== "/") navigate("/");
   }
+
+  const totalItem = selectedProducts.reduce(
+    (acc, product) => acc + product.quantity,
+    0,
+  );
 
   return (
     <>
@@ -98,8 +97,8 @@ export default function Header() {
             type="search"
             placeholder="Search milk.."
             containerStyleClass={style.headerInputAction}
-            onChange={handleOnChange}
-            onClick={handleSerachClick}
+            onChange={handleSearchOnChange}
+            onClick={handleSearchClick}
             value={searchParam.get("search") || ""}
           />
 
