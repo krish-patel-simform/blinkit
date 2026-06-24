@@ -1,0 +1,5 @@
+@reference 'tailwindcss';
+
+.productListPresenter{
+    @apply flex flex-col gap-8;
+}

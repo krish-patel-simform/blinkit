@@ -1,0 +1,17 @@
+@reference 'tailwindcss';
+
+.btn
+{
+    @apply flex gap-2 py-1 px-2 cursor-pointer rounded-[var(--radius)] items-center;
+}
+
+.btnPrimary
+{
+    @apply bg-[var(--btn-primary)] text-white;
+}
+
+
+.btnSecondary
+{
+    @apply bg-[var(--btn-secondary)];
+}

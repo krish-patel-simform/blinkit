@@ -1,0 +1,13 @@
+@reference 'tailwindcss';
+
+.inputContainer{
+    @apply flex flex gap-2 bg-[var(--bg-secondary)] rounded-[var(--radius)] p-1 items-center;
+}
+
+.inputContainer:focus-within{
+    @apply border border-green-500;
+}
+
+.input{
+    @apply border-0 outline-0 bg-none grow;
+}

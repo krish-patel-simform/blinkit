@@ -1,0 +1,12 @@
+export const CONFIG = {
+  JSON_SERVER_PREFIX:
+    "https://raw.githubusercontent.com/kp2103/blinkit_data/refs/heads/main/db.json",
+  JSON_PRODUCTS:
+    "https://raw.githubusercontent.com/kp2103/blinkit_data/refs/heads/main/products.json",
+  JSON_CATEGORIES:
+    "https://raw.githubusercontent.com/kp2103/blinkit_data/refs/heads/main/categories.json",
+  STRIPE_SERVER: "https://blinkit-server-1p1q.onrender.com",
+};
+
+export const HANDLING_FEE = 2;
+export const DELIVERY_FEE = 10;
