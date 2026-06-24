@@ -1,8 +1,8 @@
 import { useSearchParams } from "react-router";
 import { useState } from "react";
 import { useAllProductList } from "../../hooks/useAllProductList";
-import { useGlobalContext } from "../../hooks/useGlobalContext";
 import Button from "../Button/Button";
+import { useGlobalContext } from "../../hooks/useGlobalContext";
 import ProductList from "../Product/ProductList";
 
 import style from "./productListPresenter.module.css";

@@ -1,6 +1,7 @@
 import style from "./footer.module.css";
 import Button from "../Button/Button";
 import { useGlobalContext } from "../../hooks/useGlobalContext";
+
 export default function Footer() {
   const { searchRef } = useGlobalContext();
 

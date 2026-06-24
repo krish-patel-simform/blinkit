@@ -10,11 +10,8 @@ import Note from "reicon-react/icons/Note";
 import Scooter from "reicon-react/icons/Scooter";
 import ShoppingBag from "reicon-react/icons/ShoppingBag";
 import { useState } from "react";
-import { CONFIG } from "../../Conast/config";
+import { CONFIG, DELIVERY_FEE, HANDLING_FEE } from "../../consts/config";
 // import { handlePayment } from "../../Stripe/Razorpay";
-
-const HANDLING_FEE = 2;
-const DELIVERY_FEE = 10;
 
 export default function CartModal({ handleOnClose }: CartModal) {
   const { selectedProducts, dispatchSelectedProducts } = useGlobalContext();

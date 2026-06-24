@@ -1,12 +1,12 @@
 import { useReducer, useRef, useState, type PropsWithChildren } from "react";
 import {
-  GlobalContext,
   type GlobalContextType,
+  GlobalContext,
 } from "../Context/GlobalContext";
 import { selectedProductReducer } from "../Reducer/selectedProductReducer";
 import type { Filters } from "../types";
 
-export default function GlobalContextProvider({ children }: PropsWithChildren) {
+export default function CartContextProvider({ children }: PropsWithChildren) {
   const [selectedProducts, dispatchSelectedProducts] = useReducer(
     selectedProductReducer,
     [],

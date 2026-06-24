@@ -1,9 +1,0 @@
-@reference 'tailwindcss';
-
-.otpInputContainer {
-  @apply grid grid-cols-4 gap-5;
-}
-
-.otpInput {
-  @apply border border-solid border-slate-500 focus:border-blue-600 p-5;
-}

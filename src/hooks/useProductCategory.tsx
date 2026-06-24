@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Category } from "../types";
-import { CONFIG } from "../Conast/config";
+import { CONFIG } from "../consts/config";
 
 type RawCategory = {
   image_title: string;

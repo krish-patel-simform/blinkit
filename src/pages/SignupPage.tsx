@@ -9,7 +9,7 @@ import {
 } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { loginSchema, type LoginSchema } from "../schema";
+import { userSchema, type UserSchema } from "../schema";
 import { createUser } from "../firebase/createUser";
 import { Link, useNavigate } from "react-router";
 
@@ -18,13 +18,13 @@ export default function SignupPage() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<LoginSchema>({
-    resolver: zodResolver(loginSchema),
+  } = useForm<UserSchema>({
+    resolver: zodResolver(userSchema),
   });
 
   const navigate = useNavigate();
 
-  const handleSignup: SubmitHandler<LoginSchema> = async (data) => {
+  const handleSignup: SubmitHandler<UserSchema> = async (data) => {
     const isAuthenticated = await createUser(data.email, data.password);
 
     if (isAuthenticated) {
@@ -32,7 +32,7 @@ export default function SignupPage() {
     }
   };
 
-  const onError: SubmitErrorHandler<LoginSchema> = (error) => {
+  const onError: SubmitErrorHandler<UserSchema> = (error) => {
     console.log(error);
   };
 

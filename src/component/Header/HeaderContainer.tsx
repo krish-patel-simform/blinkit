@@ -18,15 +18,14 @@ const FILTER_OPTION = [
 ];
 
 export default function Header() {
-  const { searchRef } = useGlobalContext();
-
   const navigate = useNavigate();
   const location = useLocation();
   const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
   const [searchParam, setSearchParam] = useSearchParams();
+  const { selectedProducts, searchRef } = useGlobalContext();
 
-  const { selectedProducts } = useGlobalContext();
+  // const { selectedProducts } = useGlobalContext();
 
   useEffect(() => {
     if (isCartModalOpen) {
@@ -48,17 +47,12 @@ export default function Header() {
     console.log("Your is placed");
   }
 
-  const totalItem = selectedProducts.reduce(
-    (acc, product) => acc + product.quantity,
-    0,
-  );
-
-  function handleSerachClick() {
+  function handleSearchClick() {
     if (location.pathname !== "/s/products")
       navigate(`/s/products`, { replace: true });
   }
 
-  function handleOnChange(e: ChangeEvent<HTMLInputElement>) {
+  function handleSearchOnChange(e: ChangeEvent<HTMLInputElement>) {
     const { value } = e.target;
     setSearchParam(
       {
@@ -76,7 +70,7 @@ export default function Header() {
   }
 
   function handleLogoClick() {
-    if (location.pathname !== "/") navigate("/", { replace: true });
+    if (location.pathname !== "/") navigate("/");
   }
 
   function handleFilterChange(e: ChangeEvent<HTMLSelectElement>) {
@@ -90,6 +84,10 @@ export default function Header() {
       },
     );
   }
+  const totalItem = selectedProducts.reduce(
+    (acc, product) => acc + product.quantity,
+    0,
+  );
 
   return (
     <>
@@ -130,8 +128,8 @@ export default function Header() {
             type="search"
             placeholder="Search milk.."
             containerStyleClass={style.headerInputAction}
-            onChange={handleOnChange}
-            onFocus={handleSerachClick}
+            onChange={handleSearchOnChange}
+            onClick={handleSearchClick}
             value={searchParam.get("search") || ""}
           />
 

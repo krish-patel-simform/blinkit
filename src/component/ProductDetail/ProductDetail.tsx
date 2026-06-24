@@ -34,11 +34,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
     (p) => p.product_id === product.product_id,
   );
 
-  let quantity = 0;
-
-  if (selectedProduct) {
-    quantity = selectedProduct.quantity;
-  }
+  const quantity = selectedProduct?.quantity ?? 0;
 
   function handleIncrease(e: MouseEvent<SVGSVGElement>) {
     e.stopPropagation();
