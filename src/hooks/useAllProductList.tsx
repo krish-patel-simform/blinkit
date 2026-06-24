@@ -36,7 +36,7 @@ function useAllProductList(query: string = "") {
 
         const jsonData = await response.json();
 
-        const filterProductList: ProductCategory[] = jsonData.map(
+        const filterProductCategory: ProductCategory[] = jsonData.map(
           (list: RawProductList) => ({
             title: list.title,
             products: list.products.map((productRaw: [Product]) => {
@@ -60,7 +60,7 @@ function useAllProductList(query: string = "") {
 
         if (!active) return;
 
-        setProductList(filterProductList);
+        setProductList(filterProductCategory);
         setLoading(false);
       } catch (error) {
         if ((error as Error).name === "AbortError") {

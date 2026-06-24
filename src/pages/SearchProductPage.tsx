@@ -2,13 +2,13 @@ import { useMemo } from "react";
 import { useSearchParams } from "react-router";
 import { useAllProductList } from "../hooks/useAllProductList";
 import type { Product, ProductCategory } from "../types";
-import { useGlobalContext } from "../hooks/useGlobalContext";
+import { useCartContext } from "../hooks/useCartContext";
 import ProductCard from "../component/Product/ProductCard";
 export default function SearchProductPage() {
   const [searchParam] = useSearchParams();
   const query = searchParam.get("search") || "";
   const { loading, productList: categories } = useAllProductList(query);
-  const { selectedProducts, dispatchSelectedProducts } = useGlobalContext();
+  const { selectedProducts, dispatchSelectedProducts } = useCartContext();
 
   const filterProducts: ProductCategory = useMemo(() => {
     if (query) {

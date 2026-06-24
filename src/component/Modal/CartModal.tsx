@@ -2,7 +2,7 @@ import style from "./cartModal.module.css";
 
 import type { CartModal } from "./cartModal.type";
 import Button from "../Button/Button";
-import { useGlobalContext } from "../../hooks/useGlobalContext";
+import { useCartContext } from "../../hooks/useCartContext";
 import ProductCard from "../Product/ProductCard";
 import ArrowLeft4 from "reicon-react/icons/ArrowLeft4";
 import CartShopping from "reicon-react/icons/CartShopping";
@@ -17,7 +17,7 @@ const HANDLING_FEE = 2;
 const DELIVERY_FEE = 10;
 
 export default function CartModal({ handleOnClose }: CartModal) {
-  const { selectedProducts, dispatchSelectedProducts } = useGlobalContext();
+  const { selectedProducts, dispatchSelectedProducts } = useCartContext();
 
   const [isPaymentProcessing, setIsPaymentProcessing] = useState(false);
 

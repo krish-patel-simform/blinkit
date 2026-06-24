@@ -3,7 +3,7 @@ import style from "./productDetail.module.css";
 import type { ProductDetailProps } from "./productDetail.type";
 import Plus from "reicon-react/icons/Plus";
 import Minus2 from "reicon-react/icons/Minus2";
-import { useGlobalContext } from "../../hooks/useGlobalContext";
+import { useCartContext } from "../../hooks/useCartContext";
 import type { MouseEvent } from "react";
 
 const WHY_US_DATA = [
@@ -28,7 +28,7 @@ const WHY_US_DATA = [
 ];
 
 export default function ProductDetail({ product }: ProductDetailProps) {
-  const { dispatchSelectedProducts, selectedProducts } = useGlobalContext();
+  const { dispatchSelectedProducts, selectedProducts } = useCartContext();
 
   const selectedProduct = selectedProducts.find(
     (p) => p.product_id === product.product_id,

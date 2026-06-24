@@ -5,7 +5,7 @@ import Input from "../Input/Input";
 import style from "./header.module.css";
 import Search4 from "reicon-react/icons/Search4";
 import CartShopping from "reicon-react/icons/CartShop";
-import { useGlobalContext } from "../../hooks/useGlobalContext";
+import { useCartContext } from "../../hooks/useCartContext";
 import CartModal from "../Modal/CartModal";
 // import { useAbortController } from "../../hooks/useAbortController";
 import { useNavigate, useSearchParams } from "react-router";
@@ -40,7 +40,7 @@ export default function Header() {
     console.log("Your is placed");
   }
 
-  const { selectedProducts } = useGlobalContext();
+  const { selectedProducts } = useCartContext();
 
   const totalItem = selectedProducts.reduce(
     (acc, product) => acc + product.quantity,

@@ -1,5 +1,5 @@
 import { useAllProductList } from "../../hooks/useAllProductList";
-import { useGlobalContext } from "../../hooks/useGlobalContext";
+import { useCartContext } from "../../hooks/useCartContext";
 import ProductList from "../Product/ProductList";
 
 import style from "./productListPresenter.module.css";
@@ -7,7 +7,7 @@ import style from "./productListPresenter.module.css";
 export default function ProductListPresenter() {
   const { loading, productList: allProdctList } = useAllProductList();
 
-  const { dispatchSelectedProducts } = useGlobalContext();
+  const { dispatchSelectedProducts } = useCartContext();
 
   if (loading) {
     return <h1>Loading...</h1>;

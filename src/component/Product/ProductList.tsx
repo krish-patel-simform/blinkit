@@ -2,13 +2,13 @@ import ProductCard from "./ProductCard";
 import type { ProductListProps } from "./productList.type";
 
 import style from "./productList.module.css";
-import { useGlobalContext } from "../../hooks/useGlobalContext";
+import { useCartContext } from "../../hooks/useCartContext";
 
 function ProductList({
   productCategory,
   dispatchSelectedProducts,
 }: ProductListProps) {
-  const { selectedProducts } = useGlobalContext();
+  const { selectedProducts } = useCartContext();
   console.log(selectedProducts);
 
   console.log(
