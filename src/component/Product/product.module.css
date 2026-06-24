@@ -1,0 +1,49 @@
+@reference 'tailwindcss';
+
+.product {
+  @apply rounded-(--radius) border-2 border-(--border-secondary) p-4 shadow-md min-w-[12rem] bg-(--secondary-color) justify-between cursor-pointer;
+}
+
+.productVertical {
+  @apply flex flex-col;
+}
+
+.productHorizontal {
+  @apply gap-1 flex text-sm h-[7rem];
+}
+
+.productImageContainerVertical {
+  @apply h-[9.75rem] aspect-square;
+}
+
+.productImage {
+  @apply h-full;
+}
+
+.productImageVisible {
+  @apply block;
+}
+
+.productImageHidden {
+  @apply hidden;
+}
+
+.productInfo {
+  @apply flex flex-col gap-4;
+}
+
+.productInfoBold {
+  @apply font-medium;
+}
+
+.productInfoSecondary {
+  @apply text-neutral-600;
+}
+
+.productActionsVertical {
+  @apply flex justify-between;
+}
+
+.productActionsHorizontal {
+  @apply flex flex-col justify-between;
+}

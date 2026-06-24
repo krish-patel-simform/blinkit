@@ -1,0 +1,43 @@
+@reference 'tailwindcss';
+
+.category {
+  @apply flex flex-col items-center justify-center cursor-pointer 
+    /* w-[110px]; */;
+}
+
+.categoryImg {
+  @apply bg-(--bg-category-card) rounded-[var(--radius)] h-[180px] w-[120px];
+
+  & > img {
+    /* @apply h-[110px] w-[110px] */
+  }
+}
+
+.imageHidden {
+  @apply hidden;
+}
+
+.imageVisible {
+  @apply block;
+}
+
+.imageSkeleton {
+  @apply h-full w-full bg-(--bg-category-card);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.categoryName {
+  @apply text-center;
+}

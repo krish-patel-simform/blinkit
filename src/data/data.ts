@@ -1,2969 +1,2720 @@
-const data = [
+
+export const banners = [
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/pet_crystal_WEB-1.png",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/baby_crystal_WEB-1.png"
+]
+
+/*
+* 0. main banner.
+* 1. product banner.
+* 2. categories.
+* 3-last : list of product
+*/
+
+
+export const categories = [
     {
-        "tracking": {
-            "widget_meta": {
-                "name": "Static Banner",
-                "title": "fnv banner",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14839841",
-                "id": "7f5a5242-5b1e-419f-bdc5-8e55f616e413"
-            }
-        },
-        "type": 55,
-        "action": {
-            "should_show_sk_overlay": false,
-            "default_uri": "grofers://collection-products?collection_uuid=736e6fc2-8c33-4c35-9821-d325509aa0e5",
-            "ios_apps_flyer_link": ""
-        },
-        "grid_span": 12,
-        "data": {
-            "image": "https://cdn.grofers.com/layout-engine/2026-01/Frame-1437256605-2-2.jpg",
-            "id": "fnv banner"
-        },
-        "layout_config": {
-            "max_width": 1280,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "border_radius": -1,
-            "aspect_ratio": 4.71,
-            "margin_bottom": 0
-        }
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-12/paan-corner_web.png",
+        "image_title": "1 - Paan Corner",
+        "deeplink": "grofers://listing?l0_cat=229&l1_cat=1982",
+        "id": "9058276"
     },
     {
-        "tracking": {
-            "widget_meta": {
-                "name": "Horizontal Image Products",
-                "title": "masthead slider card",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14804923",
-                "id": "1928d540-81aa-491d-b3a3-95efff1a55d2"
-            }
-        },
-        "type": 66,
-        "objects": [
-            {
-                "action": {
-                    "tnc_uri": "",
-                    "default_uri": "grofers://listing?l0_cat=287&l1_cat=7275"
-                },
-                "data": {
-                    "image_url": "https://cdn.grofers.com/layout-engine/2023-07/pharmacy-WEB.jpg",
-                    "id": ""
-                },
-                "meta": {
-                    "slider_type": null,
-                    "name": "masthead_web_pharma"
-                },
-                "type": 64,
-                "layout_config": {
-                    "width": 258,
-                    "height": 150
-                }
-            },
-            {
-                "action": {
-                    "tnc_uri": "",
-                    "default_uri": "grofers://listing?l0_cat=5&l1_cat=133"
-                },
-                "data": {
-                    "image_url": "https://cdn.grofers.com/layout-engine/2026-01/pet_crystal_WEB-1.png",
-                    "id": ""
-                },
-                "meta": {
-                    "slider_type": null,
-                    "name": "masthead_web_pet_care"
-                },
-                "type": 64,
-                "layout_config": {
-                    "width": 258,
-                    "height": 150
-                }
-            },
-            {
-                "action": {
-                    "tnc_uri": "",
-                    "default_uri": "grofers://listing?l0_cat=7&l1_cat=1000"
-                },
-                "data": {
-                    "image_url": "https://cdn.grofers.com/layout-engine/2026-01/baby_crystal_WEB-1.png",
-                    "id": ""
-                },
-                "meta": {
-                    "slider_type": null,
-                    "name": "masthead_web_baby_care"
-                },
-                "type": 64,
-                "layout_config": {
-                    "width": 258,
-                    "height": 150
-                }
-            }
-        ],
-        "grid_span": 12,
-        "data": {
-            "title": "masthead slider card"
-        },
-        "layout_config": {
-            "max_width": 1280,
-            "background_image_url": "https://cdn.grofers.com/layout-engine/2021-10/white-bg-1.png",
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "aspect_ratio": 6.4,
-            "margin_bottom": 0
-        }
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-2_10.png",
+        "image_title": "2 - Dairy, Bread & Eggs",
+        "deeplink": "grofers://listing?l0_cat=14&l1_cat=922",
+        "id": "9058277"
     },
     {
-        "type": 52,
-        "grid_span": 12,
-        "tracking": {
-            "widget_meta": {
-                "name": "Image Grid",
-                "title": "grid5x4_shop_by_category_category_tab_web_test",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": "vertical_plp_new",
-                "revision_id": "14838667",
-                "id": "2d91d7ac-767c-43ae-8287-2f5490470ab9"
-            }
-        },
-        "data": {
-            "click_source": null,
-            "view_type": "grid",
-            "items": [
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-3_9.png",
+        "image_title": "3 - Fruits & Vegetables",
+        "deeplink": "grofers://listing?l0_cat=1487&l1_cat=1489",
+        "id": "9058278"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-4_9.png",
+        "image_title": "4 - Cold Drinks & Juices ",
+        "deeplink": "grofers://listing?l0_cat=332&l1_cat=1102",
+        "id": "9058279"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-5_4.png",
+        "image_title": "5 - Snacks & Munchies ",
+        "deeplink": "grofers://listing?l0_cat=1237&l1_cat=940",
+        "id": "9058280"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-6_5.png",
+        "image_title": "6 - Breakfast & Instant Food",
+        "deeplink": "grofers://listing?l0_cat=15&l1_cat=954",
+        "id": "9058281"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-7_3.png",
+        "image_title": "7 - Sweet Tooth",
+        "deeplink": "grofers://listing?l0_cat=9&l1_cat=944",
+        "id": "9058282"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-8_4.png",
+        "image_title": "8 - Bakery & Biscuits",
+        "deeplink": "grofers://listing?l0_cat=888&l1_cat=28",
+        "id": "9058283"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2025-11/Slice-7-1_0.png",
+        "image_title": "9 - Tea, Coffee & Health Drink ",
+        "deeplink": "grofers://listing?l0_cat=12&l1_cat=957",
+        "id": "9058284"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-10.png",
+        "image_title": "10 - Atta, Rice & Dal",
+        "deeplink": "grofers://listing?l0_cat=16&l1_cat=1165",
+        "id": "9058285"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-11.png",
+        "image_title": "11 - Masala, Oil & More ",
+        "deeplink": "grofers://listing?l0_cat=1557&l1_cat=50",
+        "id": "9058286"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-12.png",
+        "image_title": "12 - Sauces & Spreads",
+        "deeplink": "grofers://listing?l0_cat=972&l1_cat=1131",
+        "id": "9058287"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-13.png",
+        "image_title": "13 - Chicken, Meat & Fish ",
+        "deeplink": "grofers://listing?l0_cat=4&l1_cat=1362",
+        "id": "9058288"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-14.png",
+        "image_title": "14 - Organic & Healthy Living",
+        "deeplink": "grofers://listing?l0_cat=175&l1_cat=801",
+        "id": "9058289"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-15.png",
+        "image_title": "15 - Baby Care",
+        "deeplink": "grofers://listing?l0_cat=7&l1_cat=1000",
+        "id": "9058290"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-16.png",
+        "image_title": "16 - Pharma & Wellness",
+        "deeplink": "grofers://listing?l0_cat=287&l1_cat=1826",
+        "id": "9058291"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-17.png",
+        "image_title": "17 - Clening Essentials",
+        "deeplink": "grofers://listing?l0_cat=18&l1_cat=986",
+        "id": "9058292"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-18.png",
+        "image_title": "18 - Home & Office ",
+        "deeplink": "grofers://listing?l0_cat=1379&l1_cat=1075",
+        "id": "9058293"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-19.png",
+        "image_title": "19 - Personal Care",
+        "deeplink": "grofers://listing?l0_cat=163&l1_cat=696",
+        "id": "9058294"
+    },
+    {
+        "aspect_ratio": 0.68,
+        "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-20.png",
+        "image_title": "20 - Pet Care",
+        "deeplink": "grofers://listing?l0_cat=5&l1_cat=133",
+        "id": "9058295"
+    }
+]
+
+export const productList = [
+    {
+        "title": "Dairy, Bread & Eggs",
+        "products": [
+            [
                 {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-12/paan-corner_web.png",
-                    "image_title": "1 - Paan Corner",
-                    "deeplink": "grofers://listing?l0_cat=229&l1_cat=1982",
-                    "id": "9058276"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-2_10.png",
-                    "image_title": "2 - Dairy, Bread & Eggs",
-                    "deeplink": "grofers://listing?l0_cat=14&l1_cat=922",
-                    "id": "9058277"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-3_9.png",
-                    "image_title": "3 - Fruits & Vegetables",
-                    "deeplink": "grofers://listing?l0_cat=1487&l1_cat=1489",
-                    "id": "9058278"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-4_9.png",
-                    "image_title": "4 - Cold Drinks & Juices ",
-                    "deeplink": "grofers://listing?l0_cat=332&l1_cat=1102",
-                    "id": "9058279"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-5_4.png",
-                    "image_title": "5 - Snacks & Munchies ",
-                    "deeplink": "grofers://listing?l0_cat=1237&l1_cat=940",
-                    "id": "9058280"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-6_5.png",
-                    "image_title": "6 - Breakfast & Instant Food",
-                    "deeplink": "grofers://listing?l0_cat=15&l1_cat=954",
-                    "id": "9058281"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-7_3.png",
-                    "image_title": "7 - Sweet Tooth",
-                    "deeplink": "grofers://listing?l0_cat=9&l1_cat=944",
-                    "id": "9058282"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-8_4.png",
-                    "image_title": "8 - Bakery & Biscuits",
-                    "deeplink": "grofers://listing?l0_cat=888&l1_cat=28",
-                    "id": "9058283"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2025-11/Slice-7-1_0.png",
-                    "image_title": "9 - Tea, Coffee & Health Drink ",
-                    "deeplink": "grofers://listing?l0_cat=12&l1_cat=957",
-                    "id": "9058284"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-10.png",
-                    "image_title": "10 - Atta, Rice & Dal",
-                    "deeplink": "grofers://listing?l0_cat=16&l1_cat=1165",
-                    "id": "9058285"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-11.png",
-                    "image_title": "11 - Masala, Oil & More ",
-                    "deeplink": "grofers://listing?l0_cat=1557&l1_cat=50",
-                    "id": "9058286"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-12.png",
-                    "image_title": "12 - Sauces & Spreads",
-                    "deeplink": "grofers://listing?l0_cat=972&l1_cat=1131",
-                    "id": "9058287"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-13.png",
-                    "image_title": "13 - Chicken, Meat & Fish ",
-                    "deeplink": "grofers://listing?l0_cat=4&l1_cat=1362",
-                    "id": "9058288"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-14.png",
-                    "image_title": "14 - Organic & Healthy Living",
-                    "deeplink": "grofers://listing?l0_cat=175&l1_cat=801",
-                    "id": "9058289"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-15.png",
-                    "image_title": "15 - Baby Care",
-                    "deeplink": "grofers://listing?l0_cat=7&l1_cat=1000",
-                    "id": "9058290"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-16.png",
-                    "image_title": "16 - Pharma & Wellness",
-                    "deeplink": "grofers://listing?l0_cat=287&l1_cat=1826",
-                    "id": "9058291"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-17.png",
-                    "image_title": "17 - Clening Essentials",
-                    "deeplink": "grofers://listing?l0_cat=18&l1_cat=986",
-                    "id": "9058292"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-18.png",
-                    "image_title": "18 - Home & Office ",
-                    "deeplink": "grofers://listing?l0_cat=1379&l1_cat=1075",
-                    "id": "9058293"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-19.png",
-                    "image_title": "19 - Personal Care",
-                    "deeplink": "grofers://listing?l0_cat=163&l1_cat=696",
-                    "id": "9058294"
-                },
-                {
-                    "aspect_ratio": 0.68,
-                    "image": "https://cdn.grofers.com/layout-engine/2022-11/Slice-20.png",
-                    "image_title": "20 - Pet Care",
-                    "deeplink": "grofers://listing?l0_cat=5&l1_cat=133",
-                    "id": "9058295"
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 23197,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 12872,
+                    "has_details": false,
+                    "group_name": "Amul Gold Full Cream Milk Pack",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "500 ml",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 922,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.07,
+                    "unit_type": "ml",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Full Cream Milk",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 12,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 35,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/5737cf14-9e0c-4340-bb57-7ffee1bcd16d.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/446a9af9-d929-4312-9086-cff2bb5bea95.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/678baf78-f1a0-45c3-a79a-a70e9d09e4bd.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/5277d7c5-6993-4c55-bd46-7ae236c717d8.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Gold Full Cream Milk",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 35,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 12872,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2056955,
+                    "combo_flag": false,
+                    "keyterms": null
                 }
             ],
-            "widget_name": "grid5x4_shop_by_category_category_tab_web_test",
-            "column_count": 10,
-            "scale_type": null
-        },
-        "layout_config": {
-            "bg_color": "#FFFFFF00",
-            "max_width": 1280,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "margin_bottom": 0
-        }
-    },
-    {
-        "tracking": {
-            "widget_meta": {
-                "name": "Super Kvi Widget",
-                "title": "Web_kvi_dairy_bread_&_eggs",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14804353",
-                "id": "e28b0e0d-aa90-45e0-b290-037fa1bdb8f3"
-            }
-        },
-        "header_config": {
-            "title": "Dairy, Bread & Eggs",
-            "button_deeplink": "grofers://collection-products?collection_uuid=b33208fc-433f-4219-843e-b7163f242094",
-            "theme": "LIGHT",
-            "title_image_url": null,
-            "background_image_url": null,
-            "bg_color": "#ffffff",
-            "show_header": true,
-            "show_button": true,
-            "button_text": "see all"
-        },
-        "type": 77,
-        "variation_id": "",
-        "objects": [
-            {
-                "action": {
-                    "default_uri": "grofers://collection-products?collection_uuid=b33208fc-433f-4219-843e-b7163f242094"
-                },
-                "type": 21,
-                "data": {
-                    "merchant": {
-                        "delivery_type": "",
-                        "delivery_charge": null,
-                        "name": "Super Store Ahmedabad New Ranip ES25",
-                        "min_order": 250,
-                        "actual_name": "",
-                        "id": 34258
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 623,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 130747,
+                    "has_details": false,
+                    "group_name": "Amul Shakti Fresh Milk Pouch",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
                     },
-                    "show_view_all": true,
-                    "collection_uuid": "b33208fc-433f-4219-843e-b7163f242094",
-                    "should_display_atc_button": true,
-                    "title_action": "see all",
-                    "card_type": 5,
-                    "products": [
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 23197,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 12872,
-                                "has_details": false,
-                                "group_name": "Amul Gold Full Cream Milk Pack",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "500 ml",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 922,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.07,
-                                "unit_type": "ml",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Full Cream Milk",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 12,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 35,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/5737cf14-9e0c-4340-bb57-7ffee1bcd16d.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/446a9af9-d929-4312-9086-cff2bb5bea95.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/678baf78-f1a0-45c3-a79a-a70e9d09e4bd.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/5277d7c5-6993-4c55-bd46-7ae236c717d8.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Gold Full Cream Milk",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 35,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 12872,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2056955,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 623,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 130747,
-                                "has_details": false,
-                                "group_name": "Amul Shakti Fresh Milk Pouch",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "500 ml",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 922,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.064,
-                                "unit_type": "ml",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Fresh Milk",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 12,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 32,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/6a8390a6-3b75-4758-a261-908347b9af0f.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/955d752d-1b68-4ce5-8bd8-09ecdb316f6c.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/426b16f7-470a-49b0-b501-380d671cd26c.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/95f44760-6fcf-4ab3-a49d-3f17bc24ba71.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/47bac66b-60fe-4426-b79d-a5b1e0c46765.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Shakti Fresh Milk",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 32,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 130747,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/6a8390a6-3b75-4758-a261-908347b9af0f.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 1329674,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 24567,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 45533,
-                                "has_details": false,
-                                "group_name": "Amul Masti Pouch Curd Pack",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "390 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 123,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.0897435897,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Pouch Curd",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 50,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 35,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3af56c86-9a93-4d0c-a8d5-cf38493e4120.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/f1bf072d-9731-4beb-8c66-dc84633cac5b.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9adffe92-ceca-433b-b2ea-1c746dcdc339.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/cf24a0ca-fc6b-433f-8263-c3afc2d5ace4.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/efe31471-8d9e-4c7e-b008-b90030e08b13.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/00e9557f-bf1a-4cd1-9bed-b0dea37b6560.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9f7bca7d-f35c-44f9-8598-bc5b76b02eb9.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Masti Pouch Curd",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 35,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 45533,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3af56c86-9a93-4d0c-a8d5-cf38493e4120.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 1323521,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 24568,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 68554,
-                                "has_details": false,
-                                "group_name": "Amul Masti Cup Curd Cup",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "200 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 123,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.125,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Cup Curd",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 48,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 25,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e47341cd-d920-4c0a-a9f2-20d663976cd0.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/ed4d270e-a0eb-4e18-ad49-81cc4414b283.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/59fd260b-2b18-4ab4-b494-88c2b2a65a94.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/b0b296df-b5c8-4565-ad97-fd33aa711c77.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/fe408ff4-e5fb-455f-acaa-ffcb3b6053d8.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/dbbbc568-9e2f-455c-be6f-9970332d2259.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9583beb1-fa0d-40de-81d8-bccfbfb60692.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Masti Cup Curd",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 25,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 68554,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e47341cd-d920-4c0a-a9f2-20d663976cd0.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 1323522,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 24567,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 99407,
-                                "has_details": false,
-                                "group_name": "Amul Masti Pouch Curd Packet",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "1 kg",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 123,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 80,
-                                "unit_type": "kg",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Pouch Curd",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 32,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 80,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e7023096-622d-4e2e-9c2c-a7689262c36f.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3f5a4a47-7577-48f3-8d4c-bfab80f94fbe.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/f8020ab1-f18c-41e9-b7fd-636a25da8908.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3b6f4162-0346-4ada-a5ae-3c0919176340.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/969225d3-5051-4bd6-b457-823dda1a2ffd.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e9e74184-b689-4a6d-9d40-c885937e540a.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/15440152-d7ec-4fea-b1e2-d28bb274a44b.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Masti Pouch Curd",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 80,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 99407,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e7023096-622d-4e2e-9c2c-a7689262c36f.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2304409,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 12251,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 159,
-                                "has_details": false,
-                                "group_name": "Amul Salted Butter Pack",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "100 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 952,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.6,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Salted Butter",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 36,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 60,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3e517be1-7e0c-461a-9705-7b763f7970d8.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/5b86e01e-8711-404a-9cda-8c1cc8f78d22.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/12bfd0d3-1f27-4b34-8fdf-1bb79f9c7276.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/171a8500-0cbb-4df7-ab32-706e250becda.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e9015757-d1c3-43f1-a6d4-a059df28e89a.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/25110e0f-7ffb-4719-abe1-c2df2831bd3d.jpg",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Salted Butter",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 60,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 159,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 1910341,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 12254,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 503609,
-                                "has_details": false,
-                                "group_name": "Super Crustless White Bread Packet",
-                                "mapping_id": 0,
-                                "brand_id": 5391,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "300 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 953,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.1833333333,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "White Bread",
-                                "brand": "Super",
-                                "matched_queries": null,
-                                "inventory": 22,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 55,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c4c15dda-fcb3-43f8-9978-61680e9dd5ba.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/40cc11df-7b18-48d7-bf11-2c967a52e4f5.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/ceeaf481-02e0-4617-89da-c1156692c8d1.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c007ebda-5cd0-4a8e-aafe-c19643c02d2c.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/fd19b4ef-a76f-47f7-8386-783fe39d21b1.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4865acf0-b4a5-46a9-8a3b-079f9b4d28f8.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Super Crustless White Bread",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 55,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 503609,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c4c15dda-fcb3-43f8-9978-61680e9dd5ba.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 682082,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 24567,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 568265,
-                                "has_details": false,
-                                "group_name": "Amul Pouch Curd Pouch",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "700 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 123,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.0714285714,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Pouch Curd",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 24,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 50,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4be01dbe-2807-4c3b-8603-57ddf559df1c.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e89d32e7-f320-4c8b-9229-514c195bef6c.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/aadc5303-d9d7-4fd1-b1be-6649d20ce3d9.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9950c580-cf16-4698-a8cc-a97466ef881d.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/02b6e9cf-de2b-4ced-ba70-316a4961d59b.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3bc75ab6-af1a-4680-babc-a73c5bc1429b.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/d63e9f7a-bacf-4acd-b419-f4f23e126229.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9d0d557b-8430-403c-bc7a-e8a2fe0ea8ac.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Pouch Curd",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 50,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 568265,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4be01dbe-2807-4c3b-8603-57ddf559df1c.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2340251,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 24568,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 547228,
-                                "has_details": false,
-                                "group_name": "Amul Masti Set Cup Curd Tub Tub",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "1 kg",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 123,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 110,
-                                "unit_type": "kg",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Cup Curd",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 19,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 110,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/04dbb266-d965-4447-ba2c-655f725b47f5.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/cab63bfa-fb80-4266-b2c6-4e647d584887.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/ecea832a-a960-4af9-bcdd-da0bdb7c56b1.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/67c9b2be-248d-4f9f-b294-bcbd4585a500.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/25cdc8bf-1e00-4252-8579-29a303a3c5c2.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/45ff84a0-6215-4ef3-8d85-f30a2e7d1dd9.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Masti Set Cup Curd Tub",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 110,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 547228,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/04dbb266-d965-4447-ba2c-655f725b47f5.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2241259,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 23196,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 522807,
-                                "has_details": false,
-                                "group_name": "Amul Buffalo A2 Milk Pouch",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "500 ml",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 922,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.078,
-                                "unit_type": "ml",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "A2 Milk",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 12,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 39,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1ded64a0-9f20-4a1d-8211-156f221b377b.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/01c6a56a-1eef-499b-a49c-e5658d5a267c.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/04fbee91-5583-4a5c-8dcc-7437b696bea9.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/8eb38671-1cfe-4087-ac95-4cedd34a20dd.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/f0fa6beb-068f-40b3-9cb3-c98071f88791.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3d6a26f7-9894-41df-95ec-6cad5de24f10.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/da932215-5a5e-4714-b3b9-ff4b2a7d8408.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Buffalo A2 Milk",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 39,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 522807,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1ded64a0-9f20-4a1d-8211-156f221b377b.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2057146,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 23199,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 160704,
-                                "has_details": false,
-                                "group_name": "Amul Cow Milk Pack",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "500 ml",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 922,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.06,
-                                "unit_type": "ml",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Cow Milk",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 2,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 30,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1770981407245-4.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1771323354345-7.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1775969770304-8.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4dced034-34f3-40a4-be23-5db81e3d094b.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/18b4e5d2-1674-4cc9-8d0e-8eceae925800.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1775969770304-9.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/b40cd2fa-b35d-468c-9c40-cb8fc2edaa44.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Cow Milk",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 30,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 160704,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1770981407245-4.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2056984,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 23198,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 589038,
-                                "has_details": false,
-                                "group_name": "Amul T-Special Toned Milk Pouch",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "1 ltr",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 922,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 66,
-                                "unit_type": "ltr",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Toned Milk",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 12,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 66,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a2b214c9-9441-4463-a911-c507ac5d0b94.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3bf3a1de-5c4d-49ff-8c2f-6a637e1bd248.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/11ede19c-b6da-4de6-989e-36cb00ea3631.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/31e3f877-2e17-4a69-8d97-ad357e5f8e6a.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a1275a39-865c-4afd-937d-f6023933abdd.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/71019397-f274-4ca0-8354-f93d832160b8.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/58b567b9-471c-4050-b0ce-19660dd4efd5.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul T-Special Toned Milk",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 66,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 589038,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a2b214c9-9441-4463-a911-c507ac5d0b94.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2908895,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 4458,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 170,
-                                "has_details": false,
-                                "group_name": "Amul Cheese Cubes Pack",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "200 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 2253,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.675,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Cheese Cubes",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 12,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 135,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/52377f0e-2ee1-4d3f-a0d6-f34934b71f0f.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/44d17d9c-fb13-4168-bb4f-3e1e1a73bff2.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/fbbdb3f7-b8b8-4aad-b196-7bda14baa66e.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/40b4b212-f037-4d4d-9038-2f4452bc1055.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/0b47fd62-fb31-4e26-ac9b-95618dd3d737.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/32cbf2b5-21c9-45f7-aeb9-273b3f880f35.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/16a13add-5e58-4a89-a265-11dd9743327b.jpg",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Cheese Cubes",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 135,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 170,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/52377f0e-2ee1-4d3f-a0d6-f34934b71f0f.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 1911245,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 23199,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 559097,
-                                "has_details": false,
-                                "group_name": "Amul A2 Gir Cow Milk Pouch",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "1 ltr",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 922,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 85,
-                                "unit_type": "ltr",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Cow Milk",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 8,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 85,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/53cc4198-105d-4a42-a9e8-664297a37683.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1af106ba-b8fe-4fdc-a8d2-da36da47348d.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c191b81c-aa96-4a4d-8c4e-c0d8e4d013e4.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/d8a369c6-7390-4a81-b6d5-df6fc6672547.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a9e2f6da-875d-4b73-b65a-3ea827fbdbbe.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3125b817-3170-4057-932f-304a28f0883e.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/64e35303-1f5a-46b9-9d35-492ce0211d9a.png",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul A2 Gir Cow Milk",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 85,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 559097,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/53cc4198-105d-4a42-a9e8-664297a37683.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 2908406,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ],
-                        [
-                            {
-                                "rating": 0,
-                                "sts_visibility": false,
-                                "video_url": "",
-                                "type_id": 6784,
-                                "sbc_offer": "100% OFF",
-                                "default_product_id": 33162,
-                                "has_details": false,
-                                "group_name": "Amul Cheese Block Pack",
-                                "mapping_id": 0,
-                                "brand_id": 1744,
-                                "merchant_type": "express",
-                                "sbc_price": 0,
-                                "has_inventory": false,
-                                "sponsored_metadata": {
-                                    "ads_cost_id": 0,
-                                    "ads_subcampaign_id": 0,
-                                    "ads_asset_type_id": 0,
-                                    "ads_campaign_type": "",
-                                    "ads_type": "",
-                                    "ads_asset_type": "",
-                                    "ads_campaign_id": 0,
-                                    "id": 0
-                                },
-                                "unit": "200 g",
-                                "group_attribute_info": {
-                                    "id": 80,
-                                    "name": "unit"
-                                },
-                                "merchant_id": 34258,
-                                "is_boosted": false,
-                                "product_display_tags": null,
-                                "pricing_comment": "",
-                                "level1_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 2253,
-                                        "name": ""
-                                    }
-                                ],
-                                "unit_price": 0.645,
-                                "unit_type": "g",
-                                "rating_count": 0,
-                                "badges": null,
-                                "line_1": "",
-                                "sbc_enabled": false,
-                                "type": "Cheese Block",
-                                "brand": "Amul",
-                                "matched_queries": null,
-                                "inventory": 21,
-                                "recommended_purchase_quantity": null,
-                                "is_selected": true,
-                                "offer": null,
-                                "npr_container_id": null,
-                                "price": 129,
-                                "incentives": null,
-                                "entity_attributes": null,
-                                "merchant_rank": null,
-                                "discount": 0,
-                                "video_meta": null,
-                                "product_recommendations_flag": false,
-                                "level0_category": [
-                                    {
-                                        "parent_id": 0,
-                                        "id": 14,
-                                        "name": ""
-                                    }
-                                ],
-                                "rating_star_color": null,
-                                "recipe_recommendations_flag": false,
-                                "eta_tag": {
-                                    "text": "earliest",
-                                    "text_color": "#000000",
-                                    "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
-                                    "background_opacity": 1,
-                                    "background_color_v2": "#F7F7F7",
-                                    "background_color": "#FFF6C2",
-                                    "icon": "FLASH_ENABLED"
-                                },
-                                "product_tags": null,
-                                "pl_flag": false,
-                                "assets": [
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9f38c0e4-aa9b-445f-8563-f91e40d69938.png",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/52c1be67-9100-4f3a-ba16-5f883b7d1533.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/534516bc-25f7-467e-9084-6eb01c473b63.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4a1a0543-cc27-4080-b601-3d2b94da567c.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1df3a35a-cadf-4d74-b7ba-e316ea27a0df.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/b9d9172d-1e02-48dc-8bb1-f735d7a72008.jpg",
-                                        "asset_type": "image"
-                                    },
-                                    {
-                                        "video_info": {
-                                            "url": "",
-                                            "aspect_ratio": 0,
-                                            "thumbnail_url": ""
-                                        },
-                                        "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e9490f66-e9b7-4d0e-8d6c-e876a0ac6c5a.jpg",
-                                        "asset_type": "image"
-                                    }
-                                ],
-                                "image_overlay_tags": [
-                                    ""
-                                ],
-                                "line_2": "",
-                                "name": "Amul Cheese Block",
-                                "sts_sbc_savings": null,
-                                "variant_meta": null,
-                                "rating_flag": false,
-                                "mrp": 129,
-                                "leaf_category": {
-                                    "parent_id": 0,
-                                    "id": 0,
-                                    "name": ""
-                                },
-                                "received_at_ts": 0,
-                                "offers": null,
-                                "npr_container": null,
-                                "product_id": 33162,
-                                "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9f38c0e4-aa9b-445f-8563-f91e40d69938.png",
-                                "is_previous_buy": false,
-                                "availability_status": "",
-                                "group_id": 1911196,
-                                "combo_flag": false,
-                                "keyterms": null
-                            }
-                        ]
+                    "unit": "500 ml",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 922,
+                            "name": ""
+                        }
                     ],
-                    "collection_id": "",
-                    "product_rows": 1,
-                    "deeplink_action": "grofers://collection-products?collection_uuid=b33208fc-433f-4219-843e-b7163f242094"
+                    "unit_price": 0.064,
+                    "unit_type": "ml",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Fresh Milk",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 12,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 32,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/6a8390a6-3b75-4758-a261-908347b9af0f.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/955d752d-1b68-4ce5-8bd8-09ecdb316f6c.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/426b16f7-470a-49b0-b501-380d671cd26c.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/95f44760-6fcf-4ab3-a49d-3f17bc24ba71.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/47bac66b-60fe-4426-b79d-a5b1e0c46765.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Shakti Fresh Milk",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 32,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 130747,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/6a8390a6-3b75-4758-a261-908347b9af0f.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 1329674,
+                    "combo_flag": false,
+                    "keyterms": null
                 }
-            }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 24567,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 45533,
+                    "has_details": false,
+                    "group_name": "Amul Masti Pouch Curd Pack",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "390 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 123,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.0897435897,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Pouch Curd",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 50,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 35,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3af56c86-9a93-4d0c-a8d5-cf38493e4120.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/f1bf072d-9731-4beb-8c66-dc84633cac5b.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9adffe92-ceca-433b-b2ea-1c746dcdc339.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/cf24a0ca-fc6b-433f-8263-c3afc2d5ace4.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/efe31471-8d9e-4c7e-b008-b90030e08b13.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/00e9557f-bf1a-4cd1-9bed-b0dea37b6560.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9f7bca7d-f35c-44f9-8598-bc5b76b02eb9.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Masti Pouch Curd",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 35,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 45533,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3af56c86-9a93-4d0c-a8d5-cf38493e4120.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 1323521,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 24568,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 68554,
+                    "has_details": false,
+                    "group_name": "Amul Masti Cup Curd Cup",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "200 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 123,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.125,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Cup Curd",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 48,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 25,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e47341cd-d920-4c0a-a9f2-20d663976cd0.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/ed4d270e-a0eb-4e18-ad49-81cc4414b283.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/59fd260b-2b18-4ab4-b494-88c2b2a65a94.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/b0b296df-b5c8-4565-ad97-fd33aa711c77.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/fe408ff4-e5fb-455f-acaa-ffcb3b6053d8.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/dbbbc568-9e2f-455c-be6f-9970332d2259.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9583beb1-fa0d-40de-81d8-bccfbfb60692.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Masti Cup Curd",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 25,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 68554,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e47341cd-d920-4c0a-a9f2-20d663976cd0.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 1323522,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 24567,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 99407,
+                    "has_details": false,
+                    "group_name": "Amul Masti Pouch Curd Packet",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "1 kg",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 123,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 80,
+                    "unit_type": "kg",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Pouch Curd",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 32,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 80,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e7023096-622d-4e2e-9c2c-a7689262c36f.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3f5a4a47-7577-48f3-8d4c-bfab80f94fbe.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/f8020ab1-f18c-41e9-b7fd-636a25da8908.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3b6f4162-0346-4ada-a5ae-3c0919176340.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/969225d3-5051-4bd6-b457-823dda1a2ffd.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e9e74184-b689-4a6d-9d40-c885937e540a.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/15440152-d7ec-4fea-b1e2-d28bb274a44b.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Masti Pouch Curd",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 80,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 99407,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e7023096-622d-4e2e-9c2c-a7689262c36f.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2304409,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 12251,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 159,
+                    "has_details": false,
+                    "group_name": "Amul Salted Butter Pack",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "100 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 952,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.6,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Salted Butter",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 36,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 60,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3e517be1-7e0c-461a-9705-7b763f7970d8.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/5b86e01e-8711-404a-9cda-8c1cc8f78d22.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/12bfd0d3-1f27-4b34-8fdf-1bb79f9c7276.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/171a8500-0cbb-4df7-ab32-706e250becda.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e9015757-d1c3-43f1-a6d4-a059df28e89a.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/25110e0f-7ffb-4719-abe1-c2df2831bd3d.jpg",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Salted Butter",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 60,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 159,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 1910341,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 12254,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 503609,
+                    "has_details": false,
+                    "group_name": "Super Crustless White Bread Packet",
+                    "mapping_id": 0,
+                    "brand_id": 5391,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "300 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 953,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.1833333333,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "White Bread",
+                    "brand": "Super",
+                    "matched_queries": null,
+                    "inventory": 22,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 55,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c4c15dda-fcb3-43f8-9978-61680e9dd5ba.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/40cc11df-7b18-48d7-bf11-2c967a52e4f5.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/ceeaf481-02e0-4617-89da-c1156692c8d1.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c007ebda-5cd0-4a8e-aafe-c19643c02d2c.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/fd19b4ef-a76f-47f7-8386-783fe39d21b1.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4865acf0-b4a5-46a9-8a3b-079f9b4d28f8.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Super Crustless White Bread",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 55,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 503609,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c4c15dda-fcb3-43f8-9978-61680e9dd5ba.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 682082,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 24567,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 568265,
+                    "has_details": false,
+                    "group_name": "Amul Pouch Curd Pouch",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "700 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 123,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.0714285714,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Pouch Curd",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 24,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 50,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4be01dbe-2807-4c3b-8603-57ddf559df1c.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e89d32e7-f320-4c8b-9229-514c195bef6c.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/aadc5303-d9d7-4fd1-b1be-6649d20ce3d9.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9950c580-cf16-4698-a8cc-a97466ef881d.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/02b6e9cf-de2b-4ced-ba70-316a4961d59b.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3bc75ab6-af1a-4680-babc-a73c5bc1429b.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/d63e9f7a-bacf-4acd-b419-f4f23e126229.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9d0d557b-8430-403c-bc7a-e8a2fe0ea8ac.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Pouch Curd",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 50,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 568265,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4be01dbe-2807-4c3b-8603-57ddf559df1c.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2340251,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 24568,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 547228,
+                    "has_details": false,
+                    "group_name": "Amul Masti Set Cup Curd Tub Tub",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "1 kg",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 123,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 110,
+                    "unit_type": "kg",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Cup Curd",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 19,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 110,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/04dbb266-d965-4447-ba2c-655f725b47f5.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/cab63bfa-fb80-4266-b2c6-4e647d584887.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/ecea832a-a960-4af9-bcdd-da0bdb7c56b1.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/67c9b2be-248d-4f9f-b294-bcbd4585a500.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/25cdc8bf-1e00-4252-8579-29a303a3c5c2.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/45ff84a0-6215-4ef3-8d85-f30a2e7d1dd9.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Masti Set Cup Curd Tub",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 110,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 547228,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/04dbb266-d965-4447-ba2c-655f725b47f5.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2241259,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 23196,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 522807,
+                    "has_details": false,
+                    "group_name": "Amul Buffalo A2 Milk Pouch",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "500 ml",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 922,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.078,
+                    "unit_type": "ml",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "A2 Milk",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 12,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 39,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1ded64a0-9f20-4a1d-8211-156f221b377b.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/01c6a56a-1eef-499b-a49c-e5658d5a267c.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/04fbee91-5583-4a5c-8dcc-7437b696bea9.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/8eb38671-1cfe-4087-ac95-4cedd34a20dd.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/f0fa6beb-068f-40b3-9cb3-c98071f88791.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3d6a26f7-9894-41df-95ec-6cad5de24f10.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/da932215-5a5e-4714-b3b9-ff4b2a7d8408.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Buffalo A2 Milk",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 39,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 522807,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1ded64a0-9f20-4a1d-8211-156f221b377b.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2057146,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 23199,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 160704,
+                    "has_details": false,
+                    "group_name": "Amul Cow Milk Pack",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "500 ml",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 922,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.06,
+                    "unit_type": "ml",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Cow Milk",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 2,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 30,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1770981407245-4.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1771323354345-7.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1775969770304-8.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4dced034-34f3-40a4-be23-5db81e3d094b.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/18b4e5d2-1674-4cc9-8d0e-8eceae925800.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1775969770304-9.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/b40cd2fa-b35d-468c-9c40-cb8fc2edaa44.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Cow Milk",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 30,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 160704,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1770981407245-4.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2056984,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 23198,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 589038,
+                    "has_details": false,
+                    "group_name": "Amul T-Special Toned Milk Pouch",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "1 ltr",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 922,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 66,
+                    "unit_type": "ltr",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Toned Milk",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 12,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 66,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a2b214c9-9441-4463-a911-c507ac5d0b94.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3bf3a1de-5c4d-49ff-8c2f-6a637e1bd248.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/11ede19c-b6da-4de6-989e-36cb00ea3631.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/31e3f877-2e17-4a69-8d97-ad357e5f8e6a.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a1275a39-865c-4afd-937d-f6023933abdd.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/71019397-f274-4ca0-8354-f93d832160b8.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/58b567b9-471c-4050-b0ce-19660dd4efd5.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul T-Special Toned Milk",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 66,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 589038,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a2b214c9-9441-4463-a911-c507ac5d0b94.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2908895,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 4458,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 170,
+                    "has_details": false,
+                    "group_name": "Amul Cheese Cubes Pack",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "200 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 2253,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.675,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Cheese Cubes",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 12,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 135,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/52377f0e-2ee1-4d3f-a0d6-f34934b71f0f.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/44d17d9c-fb13-4168-bb4f-3e1e1a73bff2.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/fbbdb3f7-b8b8-4aad-b196-7bda14baa66e.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/40b4b212-f037-4d4d-9038-2f4452bc1055.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/0b47fd62-fb31-4e26-ac9b-95618dd3d737.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/32cbf2b5-21c9-45f7-aeb9-273b3f880f35.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/16a13add-5e58-4a89-a265-11dd9743327b.jpg",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Cheese Cubes",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 135,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 170,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/52377f0e-2ee1-4d3f-a0d6-f34934b71f0f.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 1911245,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 23199,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 559097,
+                    "has_details": false,
+                    "group_name": "Amul A2 Gir Cow Milk Pouch",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "1 ltr",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 922,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 85,
+                    "unit_type": "ltr",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Cow Milk",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 8,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 85,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/53cc4198-105d-4a42-a9e8-664297a37683.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1af106ba-b8fe-4fdc-a8d2-da36da47348d.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/c191b81c-aa96-4a4d-8c4e-c0d8e4d013e4.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/d8a369c6-7390-4a81-b6d5-df6fc6672547.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/a9e2f6da-875d-4b73-b65a-3ea827fbdbbe.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/3125b817-3170-4057-932f-304a28f0883e.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/64e35303-1f5a-46b9-9d35-492ce0211d9a.png",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul A2 Gir Cow Milk",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 85,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 559097,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/53cc4198-105d-4a42-a9e8-664297a37683.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 2908406,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ],
+            [
+                {
+                    "rating": 0,
+                    "sts_visibility": false,
+                    "video_url": "",
+                    "type_id": 6784,
+                    "sbc_offer": "100% OFF",
+                    "default_product_id": 33162,
+                    "has_details": false,
+                    "group_name": "Amul Cheese Block Pack",
+                    "mapping_id": 0,
+                    "brand_id": 1744,
+                    "merchant_type": "express",
+                    "sbc_price": 0,
+                    "has_inventory": false,
+                    "sponsored_metadata": {
+                        "ads_cost_id": 0,
+                        "ads_subcampaign_id": 0,
+                        "ads_asset_type_id": 0,
+                        "ads_campaign_type": "",
+                        "ads_type": "",
+                        "ads_asset_type": "",
+                        "ads_campaign_id": 0,
+                        "id": 0
+                    },
+                    "unit": "200 g",
+                    "group_attribute_info": {
+                        "id": 80,
+                        "name": "unit"
+                    },
+                    "merchant_id": 34258,
+                    "is_boosted": false,
+                    "product_display_tags": null,
+                    "pricing_comment": "",
+                    "level1_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 2253,
+                            "name": ""
+                        }
+                    ],
+                    "unit_price": 0.645,
+                    "unit_type": "g",
+                    "rating_count": 0,
+                    "badges": null,
+                    "line_1": "",
+                    "sbc_enabled": false,
+                    "type": "Cheese Block",
+                    "brand": "Amul",
+                    "matched_queries": null,
+                    "inventory": 21,
+                    "recommended_purchase_quantity": null,
+                    "is_selected": true,
+                    "offer": null,
+                    "npr_container_id": null,
+                    "price": 129,
+                    "incentives": null,
+                    "entity_attributes": null,
+                    "merchant_rank": null,
+                    "discount": 0,
+                    "video_meta": null,
+                    "product_recommendations_flag": false,
+                    "level0_category": [
+                        {
+                            "parent_id": 0,
+                            "id": 14,
+                            "name": ""
+                        }
+                    ],
+                    "rating_star_color": null,
+                    "recipe_recommendations_flag": false,
+                    "eta_tag": {
+                        "text": "earliest",
+                        "text_color": "#000000",
+                        "icon_image_uri": "http://cdn.grofers.com/assets/eta-icons/15-mins.png",
+                        "background_opacity": 1,
+                        "background_color_v2": "#F7F7F7",
+                        "background_color": "#FFF6C2",
+                        "icon": "FLASH_ENABLED"
+                    },
+                    "product_tags": null,
+                    "pl_flag": false,
+                    "assets": [
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9f38c0e4-aa9b-445f-8563-f91e40d69938.png",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/52c1be67-9100-4f3a-ba16-5f883b7d1533.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/534516bc-25f7-467e-9084-6eb01c473b63.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/4a1a0543-cc27-4080-b601-3d2b94da567c.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/1df3a35a-cadf-4d74-b7ba-e316ea27a0df.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/b9d9172d-1e02-48dc-8bb1-f735d7a72008.jpg",
+                            "asset_type": "image"
+                        },
+                        {
+                            "video_info": {
+                                "url": "",
+                                "aspect_ratio": 0,
+                                "thumbnail_url": ""
+                            },
+                            "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/e9490f66-e9b7-4d0e-8d6c-e876a0ac6c5a.jpg",
+                            "asset_type": "image"
+                        }
+                    ],
+                    "image_overlay_tags": [
+                        ""
+                    ],
+                    "line_2": "",
+                    "name": "Amul Cheese Block",
+                    "sts_sbc_savings": null,
+                    "variant_meta": null,
+                    "rating_flag": false,
+                    "mrp": 129,
+                    "leaf_category": {
+                        "parent_id": 0,
+                        "id": 0,
+                        "name": ""
+                    },
+                    "received_at_ts": 0,
+                    "offers": null,
+                    "npr_container": null,
+                    "product_id": 33162,
+                    "image_url": "https://cdn.grofers.com/da/cms-assets/cms/product/9f38c0e4-aa9b-445f-8563-f91e40d69938.png",
+                    "is_previous_buy": false,
+                    "availability_status": "",
+                    "group_id": 1911196,
+                    "combo_flag": false,
+                    "keyterms": null
+                }
+            ]
         ],
-        "action": {
-            "default_uri": "grofers://collection-products?collection_uuid=b33208fc-433f-4219-843e-b7163f242094"
-        },
-        "grid_span": 12,
-        "data": {
-            "show_header": true,
-            "header_text_color": "#000000",
-            "subtitle": "energy drinks, antiseptics and more",
-            "title": "Dairy, Bread & Eggs",
-            "collection_name": null,
-            "title_img_url": null,
-            "title_action": "see all",
-            "show_view_all": true,
-            "theme": "LIGHT",
-            "is_for_gifting": false,
-            "animation_delay": 100,
-            "is_animated": false,
-            "deeplink_action": "grofers://collection-products?collection_uuid=b33208fc-433f-4219-843e-b7163f242094",
-            "product_name_no_of_lines": 2
-        },
-        "layout_config": {
-            "bg_color": "#ffffff",
-            "max_width": 1280,
-            "background_image_url": null,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "margin_bottom": 0
-        }
     },
     {
-        "tracking": {
-            "widget_meta": {
-                "name": "Super Kvi Widget",
-                "title": "Web_kvi_snacks_&_munchies",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14804429",
-                "id": "d120908d-3bd3-4fde-999f-9e67a10061f0"
-            }
-        },
-        "header_config": {
-            "title": "Snacks & Munchies",
-            "button_deeplink": "grofers://collection-products?collection_uuid=264b75b3-e587-4d6a-9aca-e3773d71b865",
-            "theme": "LIGHT",
-            "title_image_url": null,
-            "background_image_url": null,
-            "bg_color": "#ffffff",
-            "show_header": true,
-            "show_button": true,
-            "button_text": "see all"
-        },
-        "type": 77,
-        "variation_id": "",
-        "objects": [
-            {
-                "action": {
-                    "default_uri": "grofers://collection-products?collection_uuid=264b75b3-e587-4d6a-9aca-e3773d71b865"
-                },
-                "type": 21,
-                "data": {
-                    "merchant": {
-                        "delivery_type": "",
-                        "delivery_charge": null,
-                        "name": "Super Store Ahmedabad New Ranip ES25",
-                        "min_order": 250,
-                        "actual_name": "",
-                        "id": 34258
-                    },
-                    "show_view_all": true,
-                    "collection_uuid": "264b75b3-e587-4d6a-9aca-e3773d71b865",
-                    "should_display_atc_button": true,
-                    "title_action": "see all",
-                    "card_type": 5,
-                    "products": [
+        "title": "Snacks & Munchies",
+        "products": [
                         [
                             {
                                 "rating": 0,
@@ -5821,87 +5572,10 @@ const data = [
                             }
                         ]
                     ],
-                    "collection_id": "",
-                    "product_rows": 1,
-                    "deeplink_action": "grofers://collection-products?collection_uuid=264b75b3-e587-4d6a-9aca-e3773d71b865"
-                }
-            }
-        ],
-        "action": {
-            "default_uri": "grofers://collection-products?collection_uuid=264b75b3-e587-4d6a-9aca-e3773d71b865"
-        },
-        "grid_span": 12,
-        "data": {
-            "show_header": true,
-            "header_text_color": "#000000",
-            "subtitle": "energy drinks, antiseptics and more",
-            "title": "Dairy, Bread & Eggs",
-            "collection_name": null,
-            "title_img_url": null,
-            "title_action": "see all",
-            "show_view_all": true,
-            "theme": "LIGHT",
-            "is_for_gifting": false,
-            "animation_delay": 100,
-            "is_animated": false,
-            "deeplink_action": "grofers://collection-products?collection_uuid=264b75b3-e587-4d6a-9aca-e3773d71b865",
-            "product_name_no_of_lines": 2
-        },
-        "layout_config": {
-            "bg_color": "#ffffff",
-            "max_width": 1280,
-            "background_image_url": null,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "margin_bottom": 0
-        }
     },
     {
-        "tracking": {
-            "widget_meta": {
-                "name": "Super Kvi Widget",
-                "title": "Web_kvi_mouth_fresheners",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14804509",
-                "id": "8e3e1635-e69c-439f-b11d-30745fa748f1"
-            }
-        },
-        "header_config": {
-            "title": "Mouth fresheners",
-            "button_deeplink": "grofers://collection-products?collection_uuid=25440383-3328-4db6-81c4-0beb533a4d0b",
-            "theme": "LIGHT",
-            "title_image_url": null,
-            "background_image_url": null,
-            "bg_color": "#ffffff",
-            "show_header": true,
-            "show_button": true,
-            "button_text": "see all"
-        },
-        "type": 77,
-        "variation_id": "",
-        "objects": [
-            {
-                "action": {
-                    "default_uri": "grofers://collection-products?collection_uuid=25440383-3328-4db6-81c4-0beb533a4d0b"
-                },
-                "type": 21,
-                "data": {
-                    "merchant": {
-                        "delivery_type": "",
-                        "delivery_charge": null,
-                        "name": "Super Store Ahmedabad New Ranip ES25",
-                        "min_order": 250,
-                        "actual_name": "",
-                        "id": 34258
-                    },
-                    "show_view_all": true,
-                    "collection_uuid": "25440383-3328-4db6-81c4-0beb533a4d0b",
-                    "should_display_atc_button": true,
-                    "title_action": "see all",
-                    "card_type": 5,
-                    "products": [
+         "title": "Mouth fresheners",
+         "products": [
                         [
                             {
                                 "rating": 0,
@@ -8452,88 +8126,11 @@ const data = [
                                 "keyterms": null
                             }
                         ]
-                    ],
-                    "collection_id": "",
-                    "product_rows": 1,
-                    "deeplink_action": "grofers://collection-products?collection_uuid=25440383-3328-4db6-81c4-0beb533a4d0b"
-                }
-            }
-        ],
-        "action": {
-            "default_uri": "grofers://collection-products?collection_uuid=25440383-3328-4db6-81c4-0beb533a4d0b"
-        },
-        "grid_span": 12,
-        "data": {
-            "show_header": true,
-            "header_text_color": "#000000",
-            "subtitle": "energy drinks, antiseptics and more",
-            "title": "Dairy, Bread & Eggs",
-            "collection_name": null,
-            "title_img_url": null,
-            "title_action": "see all",
-            "show_view_all": true,
-            "theme": "LIGHT",
-            "is_for_gifting": false,
-            "animation_delay": 100,
-            "is_animated": false,
-            "deeplink_action": "grofers://collection-products?collection_uuid=25440383-3328-4db6-81c4-0beb533a4d0b",
-            "product_name_no_of_lines": 2
-        },
-        "layout_config": {
-            "bg_color": "#ffffff",
-            "max_width": 1280,
-            "background_image_url": null,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "margin_bottom": 0
-        }
+                    ],   
     },
     {
-        "tracking": {
-            "widget_meta": {
-                "name": "Super Kvi Widget",
-                "title": "Web_kvi_cold_drinks_&_Juices",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14804547",
-                "id": "c31bfe4e-08f0-4df1-b824-c9fbf20a8350"
-            }
-        },
-        "header_config": {
-            "title": "Cold Drinks & Juices",
-            "button_deeplink": "grofers://collection-products?collection_uuid=a1239437-6d7f-4050-b76c-ec94f7f273c1",
-            "theme": "LIGHT",
-            "title_image_url": null,
-            "background_image_url": null,
-            "bg_color": "#ffffff",
-            "show_header": true,
-            "show_button": true,
-            "button_text": "see all"
-        },
-        "type": 77,
-        "variation_id": "",
-        "objects": [
-            {
-                "action": {
-                    "default_uri": "grofers://collection-products?collection_uuid=a1239437-6d7f-4050-b76c-ec94f7f273c1"
-                },
-                "type": 21,
-                "data": {
-                    "merchant": {
-                        "delivery_type": "",
-                        "delivery_charge": null,
-                        "name": "Super Store Ahmedabad New Ranip ES25",
-                        "min_order": 250,
-                        "actual_name": "",
-                        "id": 34258
-                    },
-                    "show_view_all": true,
-                    "collection_uuid": "a1239437-6d7f-4050-b76c-ec94f7f273c1",
-                    "should_display_atc_button": true,
-                    "title_action": "see all",
-                    "card_type": 5,
-                    "products": [
+        "title": "Cold Drinks & Juices",
+        "products": [
                         [
                             {
                                 "rating": 0,
@@ -11175,87 +10772,10 @@ const data = [
                             }
                         ]
                     ],
-                    "collection_id": "",
-                    "product_rows": 1,
-                    "deeplink_action": "grofers://collection-products?collection_uuid=a1239437-6d7f-4050-b76c-ec94f7f273c1"
-                }
-            }
-        ],
-        "action": {
-            "default_uri": "grofers://collection-products?collection_uuid=a1239437-6d7f-4050-b76c-ec94f7f273c1"
-        },
-        "grid_span": 12,
-        "data": {
-            "show_header": true,
-            "header_text_color": "#000000",
-            "subtitle": "energy drinks, antiseptics and more",
-            "title": "Dairy, Bread & Eggs",
-            "collection_name": null,
-            "title_img_url": null,
-            "title_action": "see all",
-            "show_view_all": true,
-            "theme": "LIGHT",
-            "is_for_gifting": false,
-            "animation_delay": 100,
-            "is_animated": false,
-            "deeplink_action": "grofers://collection-products?collection_uuid=a1239437-6d7f-4050-b76c-ec94f7f273c1",
-            "product_name_no_of_lines": 2
-        },
-        "layout_config": {
-            "bg_color": "#ffffff",
-            "max_width": 1280,
-            "background_image_url": null,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "margin_bottom": 0
-        }
     },
     {
-        "tracking": {
-            "widget_meta": {
-                "name": "Super Kvi Widget",
-                "title": "Web_kvi_candies_&_gums",
-                "minimum_time_between_impressions": 5000,
-                "variation_id": null,
-                "revision_id": "14804586",
-                "id": "396979a3-8897-4595-b469-9af1cd6870a3"
-            }
-        },
-        "header_config": {
-            "title": "Candies & Gums",
-            "button_deeplink": "grofers://collection-products?collection_uuid=228d4b03-8445-4920-a626-345266ab616a",
-            "theme": "LIGHT",
-            "title_image_url": null,
-            "background_image_url": null,
-            "bg_color": "#ffffff",
-            "show_header": true,
-            "show_button": true,
-            "button_text": "see all"
-        },
-        "type": 77,
-        "variation_id": "",
-        "objects": [
-            {
-                "action": {
-                    "default_uri": "grofers://collection-products?collection_uuid=228d4b03-8445-4920-a626-345266ab616a"
-                },
-                "type": 21,
-                "data": {
-                    "merchant": {
-                        "delivery_type": "",
-                        "delivery_charge": null,
-                        "name": "Super Store Ahmedabad New Ranip ES25",
-                        "min_order": 250,
-                        "actual_name": "",
-                        "id": 34258
-                    },
-                    "show_view_all": true,
-                    "collection_uuid": "228d4b03-8445-4920-a626-345266ab616a",
-                    "should_display_atc_button": true,
-                    "title_action": "see all",
-                    "card_type": 5,
-                    "products": [
+        "title": "Candies & Gums",
+        "products": [
                         [
                             {
                                 "rating": 0,
@@ -13834,40 +13354,5 @@ const data = [
                             }
                         ]
                     ],
-                    "collection_id": "",
-                    "product_rows": 1,
-                    "deeplink_action": "grofers://collection-products?collection_uuid=228d4b03-8445-4920-a626-345266ab616a"
-                }
-            }
-        ],
-        "action": {
-            "default_uri": "grofers://collection-products?collection_uuid=228d4b03-8445-4920-a626-345266ab616a"
-        },
-        "grid_span": 12,
-        "data": {
-            "show_header": true,
-            "header_text_color": "#000000",
-            "subtitle": "energy drinks, antiseptics and more",
-            "title": "Dairy, Bread & Eggs",
-            "collection_name": null,
-            "title_img_url": null,
-            "title_action": "see all",
-            "show_view_all": true,
-            "theme": "LIGHT",
-            "is_for_gifting": false,
-            "animation_delay": 100,
-            "is_animated": false,
-            "deeplink_action": "grofers://collection-products?collection_uuid=228d4b03-8445-4920-a626-345266ab616a",
-            "product_name_no_of_lines": 2
-        },
-        "layout_config": {
-            "bg_color": "#ffffff",
-            "max_width": 1280,
-            "background_image_url": null,
-            "margin_right": 0,
-            "margin_top": 0,
-            "margin_left": 0,
-            "margin_bottom": 0
-        }
     }
-]
+]            
