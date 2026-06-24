@@ -1,0 +1,9 @@
+@reference 'tailwindcss';
+
+.bannerContainer {
+  @apply flex gap-4 w-full justify-evenly;
+}
+
+.banner {
+  @apply h-[12.5rem] w-[21rem];
+}

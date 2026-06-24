@@ -1,0 +1,23 @@
+@reference 'tailwindcss';
+
+.productDetailContainer {
+  @apply flex flex-col gap-4 p-12 justify-center h-full;
+}
+
+/* Why Us */
+
+.whyUsContainer {
+  @apply flex flex-col gap-4;
+}
+
+.whyUsItem {
+  @apply flex gap-4 h-[4rem];
+}
+
+.whyUsItemSection {
+  @apply h-full;
+}
+
+.whyUsItemImage {
+  @apply h-full;
+}
