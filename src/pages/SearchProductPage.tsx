@@ -30,8 +30,6 @@ export default function SearchProductPage() {
     return { title: query, products: [] };
   }, [categories, query]);
 
-  // console.log("loading:", loading);
-  // console.log("searchProduct Page re render");
   console.log("search product page", filterProducts);
 
   if (!query) return <h1>Search milk...</h1>;
