@@ -1,0 +1,61 @@
+@import "tailwindcss";
+:root {
+  --bg-primary: #fcfcfc;
+  --bg-secondary: #f8f8f8;
+
+  /* border */
+  --border-secondary: #f8f8f8;
+
+  --radius: 5px;
+
+  --secondary-color: #f8f8f8;
+
+  /* btn */
+  --btn-primary: #0c831f;
+  --btn-secondary: var(--bg-secondary);
+
+  --primary-yellow: #f8cb46;
+  --primary-green: #0c831f;
+
+  /* category cards */
+  --bg-category-card: #edf4fe;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  --bg-primary: black;
+  --bg-secondary: : rgb(30, 30, 30);
+}
+
+#root {
+  background-color: var(--bg-primary);
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+}
+
+.image-skeleton {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
